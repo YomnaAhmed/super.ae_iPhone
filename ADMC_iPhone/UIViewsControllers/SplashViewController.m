@@ -35,6 +35,7 @@
         self.splashImage.alpha=1.0;
     } completion:^(BOOL finished) {
         // Once the animation is completed and the alpha has gone to 0.0, hide the view for good
+        [appDelegate.aDMCTabBarController setSelectedIndex:4];
         [self.navigationController pushViewController:appDelegate.aDMCTabBarController animated:YES];
         
     }];

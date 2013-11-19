@@ -13,5 +13,5 @@
 
  AppDelegate *appDelegate;
 }
-
+@property (nonatomic,strong) IBOutlet UIScrollView *newsScrollView;
 @end

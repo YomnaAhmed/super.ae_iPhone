@@ -19,6 +19,9 @@
     [super viewDidLoad];
      appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
      [self.navigationItem setTitleView:[appDelegate viewTitleAdjustment:@"اخبار"]];
+     CGRect screenRect = [[UIScreen mainScreen] bounds];
+     CGFloat screenHeight = screenRect.size.height;
+     self.newsScrollView.contentSize=CGSizeMake(500.0, screenHeight-120);
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
