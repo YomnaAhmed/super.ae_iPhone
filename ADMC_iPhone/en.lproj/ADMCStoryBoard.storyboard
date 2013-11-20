@@ -17,25 +17,67 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="367"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" id="y3M-pD-rke">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="liS-0C-dfk">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="367"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <subviews>
-                                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" id="CvV-gD-3R9">
-                                                <rect key="frame" x="0.0" y="131" width="320" height="36"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                                                <color key="backgroundColor" red="0.56078433989999998" green="0.43921571970000001" blue="0.58823531870000001" alpha="1" colorSpace="deviceRGB"/>
-                                            </pageControl>
-                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="3wu-ho-R3e">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="131"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <view key="tableHeaderView" contentMode="scaleToFill" id="y3M-pD-rke">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="165"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" id="CvV-gD-3R9">
+                                                    <rect key="frame" x="0.0" y="129" width="320" height="36"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                                    <color key="backgroundColor" red="0.56078433989999998" green="0.43921571970000001" blue="0.58823531870000001" alpha="1" colorSpace="deviceRGB"/>
+                                                </pageControl>
+                                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="3wu-ho-R3e">
+                                                    <rect key="frame" x="0.0" y="20" width="320" height="111"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="CZ4-MO-1fc" id="nqX-fz-6ND"/>
+                                                    </connections>
+                                                </scrollView>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اخر تحديث" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YRP-J8-jrj">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <prototypes>
+                                            <tableViewCell contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NewsCell" rowHeight="59" id="T1f-dq-7YK" customClass="GeneralCell">
+                                                <rect key="frame" x="0.0" y="187" width="320" height="59"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="T1f-dq-7YK" id="hMt-ax-S1f">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="58"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="second" id="qZq-lf-BOg">
+                                                            <rect key="frame" x="195" y="6" width="117" height="46"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        </imageView>
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اخر خبر" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0C5-GK-aeg">
+                                                            <rect key="frame" x="20" y="12" width="157" height="34"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </tableViewCellContentView>
                                                 <connections>
-                                                    <outlet property="delegate" destination="CZ4-MO-1fc" id="nqX-fz-6ND"/>
+                                                    <outlet property="generalImage" destination="qZq-lf-BOg" id="PFf-VQ-IVh"/>
+                                                    <outlet property="generalLabel" destination="0C5-GK-aeg" id="zfQ-ac-Vwr"/>
                                                 </connections>
-                                            </scrollView>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <sections/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="CZ4-MO-1fc" id="gpD-Gg-9yy"/>
+                                            <outlet property="delegate" destination="CZ4-MO-1fc" id="O8R-vG-5MT"/>
+                                        </connections>
+                                    </tableView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.40039388097238027" green="0.61826371173469385" blue="0.28177208063287346" alpha="1" colorSpace="calibratedRGB"/>
                             </scrollView>
@@ -47,6 +89,7 @@
                     <connections>
                         <outlet property="newsPageController" destination="CvV-gD-3R9" id="kss-m6-JyM"/>
                         <outlet property="newsScrollView" destination="OYQ-ep-Wzj" id="Anj-hj-N5M"/>
+                        <outlet property="newsTableView" destination="liS-0C-dfk" id="FGM-nu-ezm"/>
                         <outlet property="pageControlScrollView" destination="3wu-ho-R3e" id="3wb-7H-EMz"/>
                     </connections>
                 </viewController>
@@ -351,6 +394,10 @@
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
+        <image name="first" width="30" height="30"/>
+        <image name="first" width="30" height="30"/>
+        <image name="second" width="30" height="30"/>
+        <image name="second" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
         <image name="splash.jpg" width="275" height="183"/>
     </resources>

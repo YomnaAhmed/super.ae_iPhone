@@ -8,6 +8,7 @@
 
 #import "NewsViewController.h"
 #import "PageControlViewController.h"
+#import "GeneralCell.h"
 
 static NSUInteger numberOfPages = 5;
 
@@ -125,7 +126,7 @@ static NSUInteger numberOfPages = 5;
     isOpen=YES;
     }
     else{
-     self.newsScrollView.contentOffset = CGPointMake(self.newsScrollView.frame.origin.x,self.newsScrollView.frame.origin.y);
+    self.newsScrollView.contentOffset = CGPointMake(self.newsScrollView.frame.origin.x,self.newsScrollView.frame.origin.y);
     isOpen=NO;
     }
 }
@@ -145,4 +146,47 @@ static NSUInteger numberOfPages = 5;
     pageControlUsed = YES;
 
 }
+
+#pragma- mark UITableViewDelegate/UITableViewDataSource
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    static NSString *cellIdentifier = @"NewsCell";
+
+    GeneralCell *cell=(GeneralCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if (cell==nil) {
+        cell = [[GeneralCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+    }
+    [cell.generalLabel setText:@"اخر خبر"];
+    
+    return cell;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+
+    return[NSString stringWithFormat:@"the sectino is %d",section];
+
+}
+
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+   
+    return 2;
+
+}
+
+
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+
+    return 3;
+
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+
 @end
