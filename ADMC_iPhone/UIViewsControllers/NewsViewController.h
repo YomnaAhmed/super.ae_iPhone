@@ -9,9 +9,21 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 
-@interface NewsViewController : UIViewController{
+@interface NewsViewController : UIViewController<UIScrollViewDelegate>{
 
- AppDelegate *appDelegate;
+    AppDelegate *appDelegate;
+    BOOL pageControlUsed;
+    BOOL isOpen;
 }
 @property (nonatomic,strong) IBOutlet UIScrollView *newsScrollView;
+@property (nonatomic,strong) IBOutlet UIPageControl *newsPageController;
+@property (nonatomic,strong) IBOutlet UIScrollView  *pageControlScrollView;
+@property (nonatomic, retain) NSMutableArray *viewControllers;
+
+
+-(void)loadScrollViewWithPage:(int)page;
+//- (void)scrollViewDidScroll:(UIScrollView *)sender;
+-(IBAction)search:(id)sender;
+-(IBAction)openSectionsView:(id)sender;
+-(IBAction)changePage:(id)sender;
 @end
