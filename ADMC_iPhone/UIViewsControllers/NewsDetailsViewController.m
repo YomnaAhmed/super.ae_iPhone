@@ -27,6 +27,9 @@
 {
     [super viewDidLoad];
     [self.articleTextView setText:@"hiiiiiiii alll offff uuuuu"];
+    appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    [appDelegate.aDMCTabBarController.tabBar setHidden:YES];
+   
 }
 
 - (void)didReceiveMemoryWarning

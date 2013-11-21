@@ -360,12 +360,25 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="5" maxValue="36" id="xZy-2V-fdc">
-                                                <rect key="frame" x="55" y="350" width="210" height="23"/>
+                                                <rect key="frame" x="55" y="335" width="210" height="23"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <connections>
                                                     <action selector="sliderValueChanged:" destination="HWF-fi-Cmm" eventType="valueChanged" id="2B3-2I-ASd"/>
                                                 </connections>
                                             </slider>
+                                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Z0V-Gh-Sq7">
+                                                <rect key="frame" x="0.0" y="372" width="320" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                                <items>
+                                                    <barButtonItem title="Item" id="Wk6-Gm-m2R"/>
+                                                    <barButtonItem width="32" style="plain" systemItem="fixedSpace" id="gzQ-Wc-rG3"/>
+                                                    <barButtonItem title="Item" id="zEc-k7-gNS"/>
+                                                    <barButtonItem width="34" style="plain" systemItem="fixedSpace" id="fUo-dH-CT4"/>
+                                                    <barButtonItem title="Item" id="BIY-e0-75K"/>
+                                                    <barButtonItem width="32" style="plain" systemItem="fixedSpace" id="M51-cR-MJN"/>
+                                                    <barButtonItem title="Item" id="Tmz-Qh-roL"/>
+                                                </items>
+                                            </toolbar>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     </view>

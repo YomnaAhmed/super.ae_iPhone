@@ -60,8 +60,11 @@ static NSUInteger numberOfPages = 5;
     
     //=====searchView=============
     isSearchViewVisible=NO;
+   
 }
-
+- (void)viewDidAppear:(BOOL)animated{
+ [appDelegate.aDMCTabBarController.tabBar setHidden:NO];
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -211,6 +214,7 @@ static NSUInteger numberOfPages = 5;
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"ADMCStoryBoard" bundle:[NSBundle mainBundle]];
     NewsDetailsViewController *newsDetailsViewController=[storyboard instantiateViewControllerWithIdentifier:@"NewsDetailsViewController"];
     [self.navigationController pushViewController:newsDetailsViewController animated:YES];
+
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 

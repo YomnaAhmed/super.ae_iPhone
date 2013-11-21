@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
 
-@interface NewsDetailsViewController : UIViewController
+@interface NewsDetailsViewController : UIViewController{
+
+
+    AppDelegate *appDelegate;
+}
 
 @property (nonatomic,strong) IBOutlet UILabel *articleTitle;
 @property (nonatomic,strong) IBOutlet UILabel *articleDate;
