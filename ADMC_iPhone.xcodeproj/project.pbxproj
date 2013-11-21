@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F0CEBF9183DF6050099B38D /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0CEBF8183DF6050099B38D /* SearchViewController.m */; };
+		6F0CEBFF183E16460099B38D /* NewsDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0CEBFE183E16460099B38D /* NewsDetailsViewController.m */; };
 		6F9823B4183CB3E200001231 /* PageControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F9823B3183CB3E200001231 /* PageControlViewController.m */; };
 		6F9823B9183D021000001231 /* GeneralCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F9823B8183D021000001231 /* GeneralCell.m */; };
 		6FC2E3DE183B636E000E21DD /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC2E3D9183B636E000E21DD /* NewsViewController.m */; };
@@ -42,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6F0CEBF7183DF6050099B38D /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		6F0CEBF8183DF6050099B38D /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		6F0CEBFD183E16460099B38D /* NewsDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsDetailsViewController.h; sourceTree = "<group>"; };
+		6F0CEBFE183E16460099B38D /* NewsDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDetailsViewController.m; sourceTree = "<group>"; };
 		6F9823B2183CB3E200001231 /* PageControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageControlViewController.h; sourceTree = "<group>"; };
 		6F9823B3183CB3E200001231 /* PageControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageControlViewController.m; sourceTree = "<group>"; };
 		6F9823B7183D021000001231 /* GeneralCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralCell.h; sourceTree = "<group>"; };
@@ -102,6 +108,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F0CEBF6183DF5D90099B38D /* SearchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6F0CEBF7183DF6050099B38D /* SearchViewController.h */,
+				6F0CEBF8183DF6050099B38D /* SearchViewController.m */,
+			);
+			name = SearchViewController;
+			sourceTree = "<group>";
+		};
 		6F9823B1183CB3B400001231 /* PageControllerViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,10 +138,13 @@
 		6FC2E3D7183B6253000E21DD /* UIViewsControllers */ = {
 			isa = PBXGroup;
 			children = (
+				6F0CEBF6183DF5D90099B38D /* SearchViewController */,
 				6F9823B6183D01E500001231 /* CustomCells */,
 				6F9823B1183CB3B400001231 /* PageControllerViews */,
 				6FC2E3D8183B636E000E21DD /* NewsViewController.h */,
 				6FC2E3D9183B636E000E21DD /* NewsViewController.m */,
+				6F0CEBFD183E16460099B38D /* NewsDetailsViewController.h */,
+				6F0CEBFE183E16460099B38D /* NewsDetailsViewController.m */,
 				6FC2E3DA183B636E000E21DD /* MatchesViewController.h */,
 				6FC2E3DB183B636E000E21DD /* MatchesViewController.m */,
 				6FC2E3DC183B636E000E21DD /* SplashViewController.h */,
@@ -332,10 +350,12 @@
 				6F9823B4183CB3E200001231 /* PageControlViewController.m in Sources */,
 				6F9823B9183D021000001231 /* GeneralCell.m in Sources */,
 				6FC2E3F1183B6D7E000E21DD /* MoreViewController.m in Sources */,
+				6F0CEBFF183E16460099B38D /* NewsDetailsViewController.m in Sources */,
 				6FC2E3EB183B6D3E000E21DD /* MediaViewController.m in Sources */,
 				6FC2E3E0183B636E000E21DD /* SplashViewController.m in Sources */,
 				6FC2E3DF183B636E000E21DD /* MatchesViewController.m in Sources */,
 				6FF70825182A41F900A05F1E /* main.m in Sources */,
+				6F0CEBF9183DF6050099B38D /* SearchViewController.m in Sources */,
 				6FC2E3EE183B6D69000E21DD /* FavouritesViewController.m in Sources */,
 				6FC2E3E4183B6387000E21DD /* AppDelegate.m in Sources */,
 			);

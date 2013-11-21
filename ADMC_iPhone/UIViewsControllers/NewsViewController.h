@@ -14,6 +14,7 @@
     AppDelegate *appDelegate;
     BOOL pageControlUsed;
     BOOL isOpen;
+    BOOL isSearchViewVisible;
 }
 @property (nonatomic,strong) IBOutlet UIScrollView  *newsScrollView;
 @property (nonatomic,strong) IBOutlet UIPageControl *newsPageController;

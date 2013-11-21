@@ -9,7 +9,8 @@
 #import "NewsViewController.h"
 #import "PageControlViewController.h"
 #import "GeneralCell.h"
-
+#import "SearchViewController.h"
+#import "NewsDetailsViewController.h"
 static NSUInteger numberOfPages = 5;
 
 @interface NewsViewController ()
@@ -55,6 +56,10 @@ static NSUInteger numberOfPages = 5;
     // load the page on either side to avoid flashes when the user starts scrolling
     [self loadScrollViewWithPage:0];
     [self loadScrollViewWithPage:1];
+    
+    
+    //=====searchView=============
+    isSearchViewVisible=NO;
 }
 
 - (void)didReceiveMemoryWarning
@@ -71,7 +76,9 @@ static NSUInteger numberOfPages = 5;
     // replace the placeholder if necessary
     PageControlViewController *controller = [self.viewControllers objectAtIndex:page];
     if ((NSNull *)controller == [NSNull null]) {
-        controller = [[PageControlViewController alloc] initWithPageNumber:page];
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"ADMCStoryBoard" bundle:[NSBundle mainBundle]];
+        controller =[storyboard instantiateViewControllerWithIdentifier:@"PageControlViewController"];
+        [controller setPageNumber:page];
         [self.viewControllers replaceObjectAtIndex:page withObject:controller];
     }
 	
@@ -117,6 +124,23 @@ static NSUInteger numberOfPages = 5;
 
 -(IBAction)search:(id)sender
 {
+    
+      UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"ADMCStoryBoard" bundle:[NSBundle mainBundle]];
+      SearchViewController *searchViewController=[storyboard instantiateViewControllerWithIdentifier:@"SearchViewController"];
+         
+
+    if (isSearchViewVisible==NO) {
+        [self.view addSubview:searchViewController.view];
+        NSLog(@"added.....");
+        isSearchViewVisible=YES;
+    }
+    else{
+        
+        [searchViewController.view removeFromSuperview];
+        isSearchViewVisible=NO;
+
+    
+    }
     NSLog(@"Search....");
 }
 
@@ -184,7 +208,9 @@ static NSUInteger numberOfPages = 5;
 
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"ADMCStoryBoard" bundle:[NSBundle mainBundle]];
+    NewsDetailsViewController *newsDetailsViewController=[storyboard instantiateViewControllerWithIdentifier:@"NewsDetailsViewController"];
+    [self.navigationController pushViewController:newsDetailsViewController animated:YES];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 

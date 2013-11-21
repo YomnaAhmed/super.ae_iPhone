@@ -26,10 +26,10 @@
 {
     [super viewDidLoad];
     //self.pageNumberLabel=[[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 30)];
-    self.pageNumberLabel.text = [NSString stringWithFormat:@"Page %d", pageNumber + 1];
+    self.pageNumberLabel.text = [NSString stringWithFormat:@"Page %d", self.pageNumber + 1];
     //[self.view addSubview:self.pageNumberLabel];
-    self.view.backgroundColor = [self pageControlColorWithIndex:pageNumber];
-    NSLog(@"page number is %d",pageNumber);
+    self.view.backgroundColor = [self pageControlColorWithIndex:self.pageNumber];
+    NSLog(@"page number is %d",self.pageNumber);
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,7 +40,7 @@
 - (id)initWithPageNumber:(int)page{
     self = [super init];
     if (self) {
-      pageNumber = page;
+      self.pageNumber = page;
     }
     return self;
 }

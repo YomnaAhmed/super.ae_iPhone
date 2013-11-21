@@ -10,12 +10,12 @@
 
 @interface PageControlViewController : UIViewController{
 
-   int pageNumber;
+   
    NSArray *pagesArray;
 
 }
 @property (nonatomic,strong) IBOutlet UILabel *pageNumberLabel;
-
+@property (nonatomic,assign) int pageNumber;
 
 - (id)initWithPageNumber:(int)page;
 - (UIColor *)pageControlColorWithIndex:(int)index;
