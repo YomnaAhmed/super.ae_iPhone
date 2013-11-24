@@ -9,16 +9,16 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 
-@interface NewsViewController : UIViewController<UIScrollViewDelegate,UITableViewDelegate,UITableViewDataSource>{
+@interface NewsViewController : UIViewController<UIScrollViewDelegate,UITableViewDelegate,UITableViewDataSource,UISearchDisplayDelegate,UISearchBarDelegate>{
 
     AppDelegate *appDelegate;
     BOOL pageControlUsed;
     BOOL isOpen;
-    BOOL isSearchViewVisible;
 }
 @property (nonatomic,strong) IBOutlet UIScrollView  *newsScrollView;
 @property (nonatomic,strong) IBOutlet UIPageControl *newsPageController;
 @property (nonatomic,strong) IBOutlet UITableView   *newsTableView;
+@property (nonatomic,strong) IBOutlet UISearchBar   *newsSearchBar;
 @property (nonatomic,strong) IBOutlet UIScrollView  *pageControlScrollView;
 @property (nonatomic, retain) NSMutableArray *viewControllers;
 

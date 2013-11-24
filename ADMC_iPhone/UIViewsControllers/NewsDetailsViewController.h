@@ -26,6 +26,16 @@
 @property (nonatomic,strong) IBOutlet UITextView *articleTextView;
 @property (nonatomic,strong) IBOutlet UIScrollView *newsDetailsScroll;
 @property (nonatomic,strong) IBOutlet UISlider *articleSlider;
+@property (nonatomic,strong) IBOutlet UIToolbar *newsDetailsToolBar;
+@property (nonatomic,strong) IBOutlet UIBarButtonItem *addCommentItem;
+@property (nonatomic,strong) IBOutlet UIBarButtonItem *favouriteItem;
+@property (nonatomic,strong) IBOutlet UIBarButtonItem *zoomItem;
+@property (nonatomic,strong) IBOutlet UIBarButtonItem *shareItem;
+
 - (IBAction) sliderValueChanged:(id)sender;
+- (IBAction) addComment:(id)sender;
+- (IBAction) addToFavourites:(id)sender;
+- (IBAction) zoomIn:(id)sender;
+- (IBAction) share:(id)sender;
 
 @end

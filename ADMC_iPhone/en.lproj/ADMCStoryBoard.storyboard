@@ -22,23 +22,32 @@
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <view key="tableHeaderView" contentMode="scaleToFill" id="y3M-pD-rke">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="165"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
-                                                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" id="CvV-gD-3R9">
-                                                    <rect key="frame" x="0.0" y="129" width="320" height="36"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                                                    <color key="backgroundColor" red="0.56078433989999998" green="0.43921571970000001" blue="0.58823531870000001" alpha="1" colorSpace="deviceRGB"/>
-                                                </pageControl>
                                                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="3wu-ho-R3e">
-                                                    <rect key="frame" x="0.0" y="20" width="320" height="111"/>
+                                                    <rect key="frame" x="0.0" y="44" width="320" height="120"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                     <connections>
                                                         <outlet property="delegate" destination="CZ4-MO-1fc" id="nqX-fz-6ND"/>
                                                     </connections>
                                                 </scrollView>
+                                                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" id="CvV-gD-3R9">
+                                                    <rect key="frame" x="0.0" y="164" width="320" height="36"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                                    <color key="backgroundColor" red="0.56078433989999998" green="0.43921571970000001" blue="0.58823531870000001" alpha="1" colorSpace="deviceRGB"/>
+                                                </pageControl>
+                                                <searchBar contentMode="redraw" barStyle="black" id="xx6-Af-SBi">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                    <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="0.68999999999999995" colorSpace="calibratedRGB"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="CZ4-MO-1fc" id="Fyk-xM-Jhr"/>
+                                                    </connections>
+                                                </searchBar>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اخر تحديث" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YRP-J8-jrj">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="21"/>
+                                                    <rect key="frame" x="-9" y="11" width="320" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="highlightedColor"/>
@@ -48,7 +57,7 @@
                                         </view>
                                         <prototypes>
                                             <tableViewCell contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NewsCell" rowHeight="59" id="T1f-dq-7YK" customClass="GeneralCell">
-                                                <rect key="frame" x="0.0" y="187" width="320" height="59"/>
+                                                <rect key="frame" x="0.0" y="222" width="320" height="59"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="T1f-dq-7YK" id="hMt-ax-S1f">
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="58"/>
@@ -91,9 +100,19 @@
                         <outlet property="newsScrollView" destination="OYQ-ep-Wzj" id="Anj-hj-N5M"/>
                         <outlet property="newsTableView" destination="liS-0C-dfk" id="FGM-nu-ezm"/>
                         <outlet property="pageControlScrollView" destination="3wu-ho-R3e" id="3wb-7H-EMz"/>
+                        <outlet property="searchDisplayController" destination="bWU-Fp-BOP" id="3rg-Hf-L7A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qh2-T1-AhA" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="bWU-Fp-BOP">
+                    <connections>
+                        <outlet property="delegate" destination="CZ4-MO-1fc" id="4DZ-YQ-Rmj"/>
+                        <outlet property="searchBar" destination="xx6-Af-SBi" id="BHa-Q0-kp9"/>
+                        <outlet property="searchContentsController" destination="CZ4-MO-1fc" id="cf0-8h-DMX"/>
+                        <outlet property="searchResultsDataSource" destination="CZ4-MO-1fc" id="QZ0-qp-dff"/>
+                        <outlet property="searchResultsDelegate" destination="CZ4-MO-1fc" id="jE8-uS-ZTo"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="1179" y="-138"/>
         </scene>
@@ -249,44 +268,6 @@
             </objects>
             <point key="canvasLocation" x="2151" y="-138"/>
         </scene>
-        <!--Search View Controller-->
-        <scene sceneID="qVs-hd-jZs">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1uY-ck-vaj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="SearchViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4QO-1d-oLn" customClass="SearchViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="pg8-GD-dlf">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <searchBar contentMode="redraw" barStyle="black" placeholder="Search" showsSearchResultsButton="YES" id="eNd-FR-XYg">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="4QO-1d-oLn" id="h1G-7S-guV"/>
-                                </connections>
-                            </searchBar>
-                        </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69000000000000006" colorSpace="calibratedRGB"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-                    <connections>
-                        <outlet property="searchDisplayController" destination="rl6-bS-fPJ" id="T0L-k5-TTr"/>
-                        <outlet property="searchView" destination="pg8-GD-dlf" id="MDG-LF-IxT"/>
-                    </connections>
-                </viewController>
-                <searchDisplayController id="rl6-bS-fPJ">
-                    <connections>
-                        <outlet property="delegate" destination="4QO-1d-oLn" id="2oR-qJ-JoX"/>
-                        <outlet property="searchBar" destination="eNd-FR-XYg" id="QZI-uo-csp"/>
-                        <outlet property="searchContentsController" destination="4QO-1d-oLn" id="Eko-Ne-eOR"/>
-                        <outlet property="searchResultsDataSource" destination="4QO-1d-oLn" id="uym-AL-N69"/>
-                        <outlet property="searchResultsDelegate" destination="4QO-1d-oLn" id="1tu-fd-n5H"/>
-                    </connections>
-                </searchDisplayController>
-            </objects>
-            <point key="canvasLocation" x="1890" y="567"/>
-        </scene>
         <!--News Details View Controller-->
         <scene sceneID="0bc-V3-1GW">
             <objects>
@@ -366,17 +347,33 @@
                                                     <action selector="sliderValueChanged:" destination="HWF-fi-Cmm" eventType="valueChanged" id="2B3-2I-ASd"/>
                                                 </connections>
                                             </slider>
-                                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Z0V-Gh-Sq7">
+                                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" id="Z0V-Gh-Sq7">
                                                 <rect key="frame" x="0.0" y="372" width="320" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                 <items>
-                                                    <barButtonItem title="Item" id="Wk6-Gm-m2R"/>
+                                                    <barButtonItem title="شارك" id="Wk6-Gm-m2R">
+                                                        <connections>
+                                                            <action selector="share:" destination="HWF-fi-Cmm" id="5AX-3s-jk3"/>
+                                                        </connections>
+                                                    </barButtonItem>
                                                     <barButtonItem width="32" style="plain" systemItem="fixedSpace" id="gzQ-Wc-rG3"/>
-                                                    <barButtonItem title="Item" id="zEc-k7-gNS"/>
+                                                    <barButtonItem title="زووم" id="zEc-k7-gNS">
+                                                        <connections>
+                                                            <action selector="zoomIn:" destination="HWF-fi-Cmm" id="wUh-9m-LWI"/>
+                                                        </connections>
+                                                    </barButtonItem>
                                                     <barButtonItem width="34" style="plain" systemItem="fixedSpace" id="fUo-dH-CT4"/>
-                                                    <barButtonItem title="Item" id="BIY-e0-75K"/>
+                                                    <barButtonItem title="مفضله" id="BIY-e0-75K">
+                                                        <connections>
+                                                            <action selector="addToFavourites:" destination="HWF-fi-Cmm" id="oft-zo-AvD"/>
+                                                        </connections>
+                                                    </barButtonItem>
                                                     <barButtonItem width="32" style="plain" systemItem="fixedSpace" id="M51-cR-MJN"/>
-                                                    <barButtonItem title="Item" id="Tmz-Qh-roL"/>
+                                                    <barButtonItem title="علق" id="Tmz-Qh-roL">
+                                                        <connections>
+                                                            <action selector="addComment:" destination="HWF-fi-Cmm" id="okp-eF-VO7"/>
+                                                        </connections>
+                                                    </barButtonItem>
                                                 </items>
                                             </toolbar>
                                         </subviews>
@@ -390,6 +387,7 @@
                     <navigationItem key="navigationItem" id="euz-gt-Uab"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="addCommentItem" destination="Tmz-Qh-roL" id="fbH-LV-XqY"/>
                         <outlet property="articleDate" destination="Ydo-nQ-O7g" id="w7m-3L-qb2"/>
                         <outlet property="articleImageView" destination="idy-TX-kCm" id="XKg-bf-ils"/>
                         <outlet property="articleSlider" destination="xZy-2V-fdc" id="M8w-2g-F4K"/>
@@ -397,10 +395,14 @@
                         <outlet property="articleTitle" destination="Mya-1d-iMq" id="E0C-Ce-97u"/>
                         <outlet property="disLikeButton" destination="C5I-VV-ct9" id="exN-tC-s18"/>
                         <outlet property="dislikeLabel" destination="qVs-xI-gSQ" id="72L-Wz-lyM"/>
+                        <outlet property="favouriteItem" destination="BIY-e0-75K" id="Sxw-bO-pKP"/>
                         <outlet property="likeButton" destination="gbV-rq-AA2" id="j0R-Er-wWW"/>
                         <outlet property="likeLabel" destination="zuJ-8i-3iH" id="54D-ZG-nr7"/>
                         <outlet property="newsDetailsScroll" destination="kvx-re-r4A" id="Xfm-mg-XWR"/>
+                        <outlet property="newsDetailsToolBar" destination="Z0V-Gh-Sq7" id="ZtO-jg-qes"/>
+                        <outlet property="shareItem" destination="Wk6-Gm-m2R" id="u3F-be-cfe"/>
                         <outlet property="writtenBy" destination="Wa1-ni-3Ml" id="Stb-vM-LQo"/>
+                        <outlet property="zoomItem" destination="zEc-k7-gNS" id="Cc7-rW-7Lr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KcP-So-ZyW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -456,7 +458,7 @@
                     <tabBarItem key="tabBarItem" title="أخبار" image="first" id="u1e-5L-l1D"/>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MDE-oP-fuX">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="MDE-oP-fuX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -476,7 +478,7 @@
                     <tabBarItem key="tabBarItem" title="مباريات" image="first" id="Z7h-1E-pvt"/>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oKv-Dm-nBo">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="oKv-Dm-nBo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -496,7 +498,7 @@
                     <tabBarItem key="tabBarItem" title="ميديا" image="second" id="oxz-Aa-Hto"/>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CQw-DZ-UGo">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="CQw-DZ-UGo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -516,7 +518,7 @@
                     <tabBarItem key="tabBarItem" title="مفضله" image="first" id="j4m-0F-iB8"/>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Yaa-x6-aeg">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="Yaa-x6-aeg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -536,7 +538,7 @@
                     <tabBarItem key="tabBarItem" title="المزيد..." image="second" id="quB-kc-RKO"/>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1cp-mE-MJ6">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="1cp-mE-MJ6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -549,13 +551,70 @@
             </objects>
             <point key="canvasLocation" x="653" y="2599"/>
         </scene>
+        <!--Add Comment View Controller-->
+        <scene sceneID="vbN-pM-OYs">
+            <objects>
+                <viewController storyboardIdentifier="AddCommentViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GVF-5U-9Ix" customClass="AddCommentViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D5r-9h-g6D">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اضف تعليق" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AQA-mv-vHe">
+                                <rect key="frame" x="0.0" y="10" width="320" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.68999999999999995" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="الاسم" textAlignment="right" minimumFontSize="17" id="bJZ-lS-Mlm">
+                                <rect key="frame" x="0.0" y="49" width="320" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="البريد الالكتروني" textAlignment="right" minimumFontSize="17" id="eJQ-8H-f13">
+                                <rect key="frame" x="0.0" y="88" width="320" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="bezel" placeholder="التعليق" textAlignment="right" minimumFontSize="17" id="1u0-Ab-nqV">
+                                <rect key="frame" x="0.0" y="125" width="320" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ORs-SX-wvg">
+                                <rect key="frame" x="0.0" y="300" width="320" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="اضف التعليق">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="d2o-aL-4ip"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0By-v9-gm4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2407" y="507"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="LJS-NF-k8H">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2IP-SL-I1g" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aBm-fC-Jvl">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="aBm-fC-Jvl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -568,13 +627,28 @@
             </objects>
             <point key="canvasLocation" x="1890" y="1177"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ezY-2i-vHY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dqd-EE-THs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="Hu8-ij-PrU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="GVF-5U-9Ix" kind="relationship" relationship="rootViewController" id="sRB-CO-F1z"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bWJ-Tq-u0h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1881" y="507"/>
+        </scene>
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
-        <image name="first" width="30" height="30"/>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
         <image name="splash.jpg" width="275" height="183"/>
     </resources>

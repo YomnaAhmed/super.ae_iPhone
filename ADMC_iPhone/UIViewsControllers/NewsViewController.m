@@ -9,7 +9,6 @@
 #import "NewsViewController.h"
 #import "PageControlViewController.h"
 #import "GeneralCell.h"
-#import "SearchViewController.h"
 #import "NewsDetailsViewController.h"
 static NSUInteger numberOfPages = 5;
 
@@ -57,9 +56,9 @@ static NSUInteger numberOfPages = 5;
     [self loadScrollViewWithPage:0];
     [self loadScrollViewWithPage:1];
     
-    
-    //=====searchView=============
-    isSearchViewVisible=NO;
+   //Search=================
+    [self.searchDisplayController.searchBar setHidden:YES];
+
    
 }
 - (void)viewDidAppear:(BOOL)animated{
@@ -127,24 +126,8 @@ static NSUInteger numberOfPages = 5;
 
 -(IBAction)search:(id)sender
 {
-    
-      UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"ADMCStoryBoard" bundle:[NSBundle mainBundle]];
-      SearchViewController *searchViewController=[storyboard instantiateViewControllerWithIdentifier:@"SearchViewController"];
-         
-
-    if (isSearchViewVisible==NO) {
-        [self.view addSubview:searchViewController.view];
-        NSLog(@"added.....");
-        isSearchViewVisible=YES;
-    }
-    else{
-        
-        [searchViewController.view removeFromSuperview];
-        isSearchViewVisible=NO;
-
-    
-    }
-    NSLog(@"Search....");
+    [self.searchDisplayController.searchBar setHidden:NO];
+    [self.searchDisplayController.searchBar becomeFirstResponder];
 }
 
 -(IBAction)openSectionsView:(id)sender{
@@ -218,5 +201,18 @@ static NSUInteger numberOfPages = 5;
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
+
+
+#pragma- mark UISearchDisplayDelegate,UISearchBarDelegate
+
+
+- (void)searchBarCancelButtonClicked:(UISearchBar *) searchBar{
+    [self.searchDisplayController.searchBar setHidden:YES];
+}
+
+- (void) searchDisplayControllerDidEndSearch:(UISearchDisplayController *)controller{
+    NSLog(@":@:@:@:@:@:@::@:@");
+
+}
 
 @end
