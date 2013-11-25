@@ -26,6 +26,10 @@
 	<true/>
 	<key>UIMainStoryboardFile</key>
 	<string>ADMCStoryBoard</string>
+	<key>FacebookAppID</key>
+	<string>1394979517411800</string>
+	<key>FacebookDisplayName</key>
+	<string>Super.ae</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
