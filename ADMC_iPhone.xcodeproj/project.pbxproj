@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6F0CEBF9183DF6050099B38D /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0CEBF8183DF6050099B38D /* SearchViewController.m */; };
 		6F0CEBFF183E16460099B38D /* NewsDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0CEBFE183E16460099B38D /* NewsDetailsViewController.m */; };
+		6F6DB81B1844BA6000CC9DB7 /* ADMC_URLS.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6DB81A1844BA6000CC9DB7 /* ADMC_URLS.m */; };
 		6F9823B4183CB3E200001231 /* PageControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F9823B3183CB3E200001231 /* PageControlViewController.m */; };
 		6F9823B9183D021000001231 /* GeneralCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F9823B8183D021000001231 /* GeneralCell.m */; };
 		6FC2E3DE183B636E000E21DD /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC2E3D9183B636E000E21DD /* NewsViewController.m */; };
@@ -110,6 +111,8 @@
 		6F0CEBF8183DF6050099B38D /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		6F0CEBFD183E16460099B38D /* NewsDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsDetailsViewController.h; sourceTree = "<group>"; };
 		6F0CEBFE183E16460099B38D /* NewsDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDetailsViewController.m; sourceTree = "<group>"; };
+		6F6DB8191844BA6000CC9DB7 /* ADMC_URLS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMC_URLS.h; sourceTree = "<group>"; };
+		6F6DB81A1844BA6000CC9DB7 /* ADMC_URLS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMC_URLS.m; sourceTree = "<group>"; };
 		6F9823B2183CB3E200001231 /* PageControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageControlViewController.h; sourceTree = "<group>"; };
 		6F9823B3183CB3E200001231 /* PageControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageControlViewController.m; sourceTree = "<group>"; };
 		6F9823B7183D021000001231 /* GeneralCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralCell.h; sourceTree = "<group>"; };
@@ -285,6 +288,15 @@
 			name = SearchViewController;
 			sourceTree = "<group>";
 		};
+		6F6DB8181844B84C00CC9DB7 /* ADMC_APIsWork */ = {
+			isa = PBXGroup;
+			children = (
+				6F6DB8191844BA6000CC9DB7 /* ADMC_URLS.h */,
+				6F6DB81A1844BA6000CC9DB7 /* ADMC_URLS.m */,
+			);
+			name = ADMC_APIsWork;
+			sourceTree = "<group>";
+		};
 		6F9823B1183CB3B400001231 /* PageControllerViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -388,6 +400,7 @@
 		6FF7081E182A41F900A05F1E /* ADMC_iPhone */ = {
 			isa = PBXGroup;
 			children = (
+				6F6DB8181844B84C00CC9DB7 /* ADMC_APIsWork */,
 				6FC2E3E5183B696F000E21DD /* images */,
 				6FC2E3E1183B6387000E21DD /* AppDelegate */,
 				6FC2E3D7183B6253000E21DD /* UIViewsControllers */,
@@ -706,6 +719,7 @@
 				6FF83D441843913C00BF30C2 /* DEFacebookTextView.m in Sources */,
 				6FF83D421843913C00BF30C2 /* DEFacebookGradientView.m in Sources */,
 				6FF83D08184390D000BF30C2 /* OWActivityViewController.m in Sources */,
+				6F6DB81B1844BA6000CC9DB7 /* ADMC_URLS.m in Sources */,
 				6FF83D5F1843913C00BF30C2 /* UIDevice+DEFacebookComposeViewController.m in Sources */,
 				6FC2E3E0183B636E000E21DD /* SplashViewController.m in Sources */,
 				6FF83D411843913C00BF30C2 /* DEFacebookComposeViewController.m in Sources */,

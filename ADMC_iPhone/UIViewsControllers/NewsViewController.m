@@ -211,7 +211,7 @@ static NSUInteger numberOfPages = 5;
 }
 
 - (void) searchDisplayControllerDidEndSearch:(UISearchDisplayController *)controller{
-    NSLog(@":@:@:@:@:@:@::@:@");
+    [self.searchDisplayController.searchBar setHidden:YES];
 
 }
 

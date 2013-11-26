@@ -110,13 +110,13 @@
     OWFacebookActivity *faceBookActivity = [[OWFacebookActivity alloc] init];
     // Create some custom activity
     //
-    OWActivity *customActivity = [[OWActivity alloc] initWithTitle:@"Custom"
-                                                             image:[UIImage imageNamed:@"OWActivityViewController.bundle/Icon_Custom"]
-                                                       actionBlock:^(OWActivity *activity, OWActivityViewController *activityViewController) {
-                                                           [activityViewController dismissViewControllerAnimated:YES completion:^{
-                                                               NSLog(@"Info: %@", activityViewController.userInfo);
-                                                           }];
-                                                       }];
+//    OWActivity *customActivity = [[OWActivity alloc] initWithTitle:@"Custom"
+//                                                             image:[UIImage imageNamed:@"OWActivityViewController.bundle/Icon_Custom"]
+//                                                       actionBlock:^(OWActivity *activity, OWActivityViewController *activityViewController) {
+//                                                           [activityViewController dismissViewControllerAnimated:YES completion:^{
+//                                                               NSLog(@"Info: %@", activityViewController.userInfo);
+//                                                           }];
+//                                                       }];
     
     // Compile activities into an array, we will pass that array to
     // OWActivityViewController on the next step
@@ -144,7 +144,7 @@
     }
     
     [activities addObjectsFromArray:@[
-                                      safariActivity, mapsActivity, printActivity, copyActivity, customActivity,faceBookActivity]];
+                                      safariActivity, mapsActivity, printActivity, copyActivity,faceBookActivity]];
     
     // Create OWActivityViewController controller and assign data source
     //
