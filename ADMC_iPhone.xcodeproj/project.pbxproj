@@ -1,1015 +1,3592 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		6F0CEBF9183DF6050099B38D /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0CEBF8183DF6050099B38D /* SearchViewController.m */; };
-		6F0CEBFF183E16460099B38D /* NewsDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0CEBFE183E16460099B38D /* NewsDetailsViewController.m */; };
-		6F6DB81B1844BA6000CC9DB7 /* ADMC_URLS.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6DB81A1844BA6000CC9DB7 /* ADMC_URLS.m */; };
-		6F9823B4183CB3E200001231 /* PageControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F9823B3183CB3E200001231 /* PageControlViewController.m */; };
-		6F9823B9183D021000001231 /* GeneralCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F9823B8183D021000001231 /* GeneralCell.m */; };
-		6FC2E3DE183B636E000E21DD /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC2E3D9183B636E000E21DD /* NewsViewController.m */; };
-		6FC2E3DF183B636E000E21DD /* MatchesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC2E3DB183B636E000E21DD /* MatchesViewController.m */; };
-		6FC2E3E0183B636E000E21DD /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC2E3DD183B636E000E21DD /* SplashViewController.m */; };
-		6FC2E3E4183B6387000E21DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC2E3E3183B6387000E21DD /* AppDelegate.m */; };
-		6FC2E3E7183B697B000E21DD /* splash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6FC2E3E6183B697B000E21DD /* splash.jpg */; };
-		6FC2E3EB183B6D3E000E21DD /* MediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC2E3EA183B6D3E000E21DD /* MediaViewController.m */; };
-		6FC2E3EE183B6D69000E21DD /* FavouritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC2E3ED183B6D69000E21DD /* FavouritesViewController.m */; };
-		6FC2E3F1183B6D7E000E21DD /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC2E3F0183B6D7E000E21DD /* MoreViewController.m */; };
-		6FEC3129184214EB00BB74BA /* AddCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FEC3128184214EB00BB74BA /* AddCommentViewController.m */; };
-		6FEC32081842350E00BB74BA /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FEC32071842350E00BB74BA /* MessageUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		6FEC320A1842352100BB74BA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FEC32091842352100BB74BA /* Security.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		6FEC320C1842353400BB74BA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FEC320B1842353400BB74BA /* SystemConfiguration.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		6FF70819182A41F900A05F1E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF70818182A41F900A05F1E /* Foundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		6FF7081B182A41F900A05F1E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF7081A182A41F900A05F1E /* CoreGraphics.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		6FF7081D182A41F900A05F1E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF7081C182A41F900A05F1E /* UIKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		6FF70823182A41F900A05F1E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6FF70821182A41F900A05F1E /* InfoPlist.strings */; };
-		6FF70825182A41F900A05F1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF70824182A41F900A05F1E /* main.m */; };
-		6FF7082C182A41F900A05F1E /* ADMCStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FF7082A182A41F900A05F1E /* ADMCStoryBoard.storyboard */; };
-		6FF70834182A41F900A05F1E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FF70833182A41F900A05F1E /* Images.xcassets */; };
-		6FF7083B182A41F900A05F1E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF7083A182A41F900A05F1E /* XCTest.framework */; };
-		6FF7083C182A41F900A05F1E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF70818182A41F900A05F1E /* Foundation.framework */; };
-		6FF7083D182A41F900A05F1E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF7081C182A41F900A05F1E /* UIKit.framework */; };
-		6FF70845182A41F900A05F1E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6FF70843182A41F900A05F1E /* InfoPlist.strings */; };
-		6FF70847182A41F900A05F1E /* ADMC_iPhoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF70846182A41F900A05F1E /* ADMC_iPhoneTests.m */; };
-		6FF83ADB18435A8A00BF30C2 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF83ADA18435A8A00BF30C2 /* Twitter.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		6FF83ADF18435B0E00BF30C2 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF83ADE18435B0E00BF30C2 /* AssetsLibrary.framework */; };
-		6FF83C0A18437F8800BF30C2 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF83C0918437F8800BF30C2 /* Social.framework */; };
-		6FF83D02184390D000BF30C2 /* OWActivityViewController.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6FF83CCF184390CF00BF30C2 /* OWActivityViewController.strings */; };
-		6FF83D03184390D000BF30C2 /* OWActivityViewController.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6FF83CD2184390CF00BF30C2 /* OWActivityViewController.strings */; };
-		6FF83D04184390D000BF30C2 /* OWActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF83CDC184390CF00BF30C2 /* OWActivity.m */; };
-		6FF83D05184390D000BF30C2 /* OWActivityDelegateObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF83CDE184390CF00BF30C2 /* OWActivityDelegateObject.m */; };
-		6FF83D06184390D000BF30C2 /* OWActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF83CE0184390CF00BF30C2 /* OWActivityView.m */; };
-		6FF83D07184390D000BF30C2 /* OWActivityViewController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6FF83CE1184390CF00BF30C2 /* OWActivityViewController.bundle */; };
-		6FF83D08184390D000BF30C2 /* OWActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF83CE3184390CF00BF30C2 /* OWActivityViewController.m */; };
-		6FF83D09184390D000BF30C2 /* OWCopyActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF83CE5184390CF00BF30C2 /* OWCopyActivity.m */; };
-		6FF83D0A184390D000BF30C2 /* OWFacebookActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF83CE7184390CF00BF30C2 /* OWFacebookActivity.m */; };
-		6FF83D0B184390D000BF30C2 /* OWMailActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF83CE9184390CF00BF30C2 /* OWMailActivity.m */; };
-		6FF83D0C184390D000BF30C2 /* OWMapsActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF83CEB184390CF00BF30C2 /* OWMapsActivity.m */; };
-		6FF83D0D184390D000BF30C2 /* OWMessageActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF83CED184390D000BF30C2 /* OWMessageActivity.m */; };
-		6FF83D0E184390D000BF30C2 /* OWPrintActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF83CEF184390D000BF30C2 /* OWPrintActivity.m */; };
-		6FF83D0F184390D000BF30C2 /* OWSafariActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF83CF1184390D000BF30C2 /* OWSafariActivity.m */; };
-		6FF83D10184390D000BF30C2 /* OWSaveToCameraRollActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF83CF3184390D000BF30C2 /* OWSaveToCameraRollActivity.m */; };
-		6FF83D11184390D000BF30C2 /* OWSinaWeiboActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF83CF5184390D000BF30C2 /* OWSinaWeiboActivity.m */; };
-		6FF83D12184390D000BF30C2 /* OWTwitterActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF83CF7184390D000BF30C2 /* OWTwitterActivity.m */; };
-		6FF83D13184390D000BF30C2 /* OWWeChatActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF83CF9184390D000BF30C2 /* OWWeChatActivity.m */; };
-		6FF83D14184390D000BF30C2 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF83CFB184390D000BF30C2 /* UIImage+Resize.m */; };
-		6FF83D401843913C00BF30C2 /* DEFacebookComposeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FF83D181843913C00BF30C2 /* DEFacebookComposeView.xib */; };
-		6FF83D411843913C00BF30C2 /* DEFacebookComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF83D1A1843913C00BF30C2 /* DEFacebookComposeViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		6FF83D421843913C00BF30C2 /* DEFacebookGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF83D1C1843913C00BF30C2 /* DEFacebookGradientView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		6FF83D431843913C00BF30C2 /* DEFacebookSheetCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF83D1E1843913C00BF30C2 /* DEFacebookSheetCardView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		6FF83D441843913C00BF30C2 /* DEFacebookTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF83D201843913C00BF30C2 /* DEFacebookTextView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		6FF83D451843913C00BF30C2 /* DERuledView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF83D221843913C00BF30C2 /* DERuledView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		6FF83D461843913C00BF30C2 /* DEFacebookAttachmentFrame.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FF83D241843913C00BF30C2 /* DEFacebookAttachmentFrame.png */; };
-		6FF83D471843913C00BF30C2 /* DEFacebookAttachmentFrame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FF83D251843913C00BF30C2 /* DEFacebookAttachmentFrame@2x.png */; };
-		6FF83D481843913C00BF30C2 /* DEFacebookCancelButtonLandscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FF83D261843913C00BF30C2 /* DEFacebookCancelButtonLandscape.png */; };
-		6FF83D491843913C00BF30C2 /* DEFacebookCancelButtonLandscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FF83D271843913C00BF30C2 /* DEFacebookCancelButtonLandscape@2x.png */; };
-		6FF83D4A1843913C00BF30C2 /* DEFacebookCancelButtonPortrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FF83D281843913C00BF30C2 /* DEFacebookCancelButtonPortrait.png */; };
-		6FF83D4B1843913C00BF30C2 /* DEFacebookCancelButtonPortrait@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FF83D291843913C00BF30C2 /* DEFacebookCancelButtonPortrait@2x.png */; };
-		6FF83D4C1843913C00BF30C2 /* DEFacebookCardAccountLine.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FF83D2A1843913C00BF30C2 /* DEFacebookCardAccountLine.png */; };
-		6FF83D4D1843913C00BF30C2 /* DEFacebookCardAccountLine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FF83D2B1843913C00BF30C2 /* DEFacebookCardAccountLine@2x.png */; };
-		6FF83D4E1843913C00BF30C2 /* DEFacebookCardBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FF83D2C1843913C00BF30C2 /* DEFacebookCardBackground.png */; };
-		6FF83D4F1843913C00BF30C2 /* DEFacebookCardBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FF83D2D1843913C00BF30C2 /* DEFacebookCardBackground@2x.png */; };
-		6FF83D501843913C00BF30C2 /* DEFacebookCardHeaderLine.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FF83D2E1843913C00BF30C2 /* DEFacebookCardHeaderLine.png */; };
-		6FF83D511843913C00BF30C2 /* DEFacebookCardHeaderLine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FF83D2F1843913C00BF30C2 /* DEFacebookCardHeaderLine@2x.png */; };
-		6FF83D521843913C00BF30C2 /* DEFacebookPaperClip.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FF83D301843913C00BF30C2 /* DEFacebookPaperClip.png */; };
-		6FF83D531843913C00BF30C2 /* DEFacebookPaperClip@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FF83D311843913C00BF30C2 /* DEFacebookPaperClip@2x.png */; };
-		6FF83D541843913C00BF30C2 /* DEFacebookSendButtonLandscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FF83D321843913C00BF30C2 /* DEFacebookSendButtonLandscape.png */; };
-		6FF83D551843913C00BF30C2 /* DEFacebookSendButtonLandscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FF83D331843913C00BF30C2 /* DEFacebookSendButtonLandscape@2x.png */; };
-		6FF83D561843913C00BF30C2 /* DEFacebookSendButtonPortrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FF83D341843913C00BF30C2 /* DEFacebookSendButtonPortrait.png */; };
-		6FF83D571843913C00BF30C2 /* DEFacebookSendButtonPortrait@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FF83D351843913C00BF30C2 /* DEFacebookSendButtonPortrait@2x.png */; };
-		6FF83D581843913C00BF30C2 /* DEFacebookURLAttachment.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FF83D361843913C00BF30C2 /* DEFacebookURLAttachment.png */; };
-		6FF83D591843913C00BF30C2 /* DEFacebookURLAttachment@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FF83D371843913C00BF30C2 /* DEFacebookURLAttachment@2x.png */; };
-		6FF83D5A1843913C00BF30C2 /* NavBarLandscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FF83D381843913C00BF30C2 /* NavBarLandscape.png */; };
-		6FF83D5B1843913C00BF30C2 /* NavBarLandscape1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FF83D391843913C00BF30C2 /* NavBarLandscape1.png */; };
-		6FF83D5C1843913C00BF30C2 /* NavBarLandscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FF83D3A1843913C00BF30C2 /* NavBarLandscape@2x.png */; };
-		6FF83D5D1843913C00BF30C2 /* NavBarLandscape@2x1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FF83D3B1843913C00BF30C2 /* NavBarLandscape@2x1.png */; };
-		6FF83D5E1843913C00BF30C2 /* UIApplication+DEFacebookComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF83D3D1843913C00BF30C2 /* UIApplication+DEFacebookComposeViewController.m */; };
-		6FF83D5F1843913C00BF30C2 /* UIDevice+DEFacebookComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF83D3F1843913C00BF30C2 /* UIDevice+DEFacebookComposeViewController.m */; };
-		6FF83D601843934A00BF30C2 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF83CFD184390D000BF30C2 /* libWeChatSDK.a */; };
-		6FF83D611843934D00BF30C2 /* libWeChatSDK_armv7_armv7s.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF83CFE184390D000BF30C2 /* libWeChatSDK_armv7_armv7s.a */; };
-		6FF83D6718439BB900BF30C2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF83D6618439BB900BF30C2 /* QuartzCore.framework */; };
-		6FF83D6918439EB400BF30C2 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF83D6818439EB400BF30C2 /* FacebookSDK.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		6FF7083E182A41F900A05F1E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6FF7080D182A41F800A05F1E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6FF70814182A41F800A05F1E;
-			remoteInfo = ADMC_iPhone;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		6F0CEBF7183DF6050099B38D /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
-		6F0CEBF8183DF6050099B38D /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
-		6F0CEBFD183E16460099B38D /* NewsDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsDetailsViewController.h; sourceTree = "<group>"; };
-		6F0CEBFE183E16460099B38D /* NewsDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDetailsViewController.m; sourceTree = "<group>"; };
-		6F6DB8191844BA6000CC9DB7 /* ADMC_URLS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADMC_URLS.h; sourceTree = "<group>"; };
-		6F6DB81A1844BA6000CC9DB7 /* ADMC_URLS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADMC_URLS.m; sourceTree = "<group>"; };
-		6F9823B2183CB3E200001231 /* PageControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageControlViewController.h; sourceTree = "<group>"; };
-		6F9823B3183CB3E200001231 /* PageControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageControlViewController.m; sourceTree = "<group>"; };
-		6F9823B7183D021000001231 /* GeneralCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralCell.h; sourceTree = "<group>"; };
-		6F9823B8183D021000001231 /* GeneralCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralCell.m; sourceTree = "<group>"; };
-		6FC2E3D8183B636E000E21DD /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
-		6FC2E3D9183B636E000E21DD /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
-		6FC2E3DA183B636E000E21DD /* MatchesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchesViewController.h; sourceTree = "<group>"; };
-		6FC2E3DB183B636E000E21DD /* MatchesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchesViewController.m; sourceTree = "<group>"; };
-		6FC2E3DC183B636E000E21DD /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
-		6FC2E3DD183B636E000E21DD /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
-		6FC2E3E2183B6387000E21DD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		6FC2E3E3183B6387000E21DD /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6FC2E3E6183B697B000E21DD /* splash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = splash.jpg; sourceTree = "<group>"; };
-		6FC2E3E9183B6D3E000E21DD /* MediaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaViewController.h; sourceTree = "<group>"; };
-		6FC2E3EA183B6D3E000E21DD /* MediaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaViewController.m; sourceTree = "<group>"; };
-		6FC2E3EC183B6D69000E21DD /* FavouritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavouritesViewController.h; sourceTree = "<group>"; };
-		6FC2E3ED183B6D69000E21DD /* FavouritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavouritesViewController.m; sourceTree = "<group>"; };
-		6FC2E3EF183B6D7E000E21DD /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
-		6FC2E3F0183B6D7E000E21DD /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
-		6FC2E3F2183B9EE0000E21DD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/ADMCStoryBoard.storyboard; sourceTree = "<group>"; };
-		6FEC3127184214EB00BB74BA /* AddCommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCommentViewController.h; sourceTree = "<group>"; };
-		6FEC3128184214EB00BB74BA /* AddCommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCommentViewController.m; sourceTree = "<group>"; };
-		6FEC32071842350E00BB74BA /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		6FEC32091842352100BB74BA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		6FEC320B1842353400BB74BA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		6FF70815182A41F900A05F1E /* ADMC_iPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADMC_iPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6FF70818182A41F900A05F1E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		6FF7081A182A41F900A05F1E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		6FF7081C182A41F900A05F1E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		6FF70820182A41F900A05F1E /* ADMC_iPhone-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ADMC_iPhone-Info.plist"; sourceTree = "<group>"; };
-		6FF70822182A41F900A05F1E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6FF70824182A41F900A05F1E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6FF70826182A41F900A05F1E /* ADMC_iPhone-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ADMC_iPhone-Prefix.pch"; sourceTree = "<group>"; };
-		6FF70833182A41F900A05F1E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6FF70839182A41F900A05F1E /* ADMC_iPhoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ADMC_iPhoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6FF7083A182A41F900A05F1E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		6FF70842182A41F900A05F1E /* ADMC_iPhoneTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ADMC_iPhoneTests-Info.plist"; sourceTree = "<group>"; };
-		6FF70844182A41F900A05F1E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6FF70846182A41F900A05F1E /* ADMC_iPhoneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADMC_iPhoneTests.m; sourceTree = "<group>"; };
-		6FF83ADA18435A8A00BF30C2 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
-		6FF83ADE18435B0E00BF30C2 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
-		6FF83C0918437F8800BF30C2 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		6FF83CD0184390CF00BF30C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/OWActivityViewController.strings; sourceTree = "<group>"; };
-		6FF83CD3184390CF00BF30C2 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/OWActivityViewController.strings; sourceTree = "<group>"; };
-		6FF83CD4184390CF00BF30C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/OWActivityViewController.strings; sourceTree = "<group>"; };
-		6FF83CD5184390CF00BF30C2 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/OWActivityViewController.strings; sourceTree = "<group>"; };
-		6FF83CD6184390CF00BF30C2 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/OWActivityViewController.strings; sourceTree = "<group>"; };
-		6FF83CD7184390CF00BF30C2 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/OWActivityViewController.strings; sourceTree = "<group>"; };
-		6FF83CD8184390CF00BF30C2 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/OWActivityViewController.strings; sourceTree = "<group>"; };
-		6FF83CD9184390CF00BF30C2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/OWActivityViewController.strings"; sourceTree = "<group>"; };
-		6FF83CDA184390CF00BF30C2 /* OWActivities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OWActivities.h; sourceTree = "<group>"; };
-		6FF83CDB184390CF00BF30C2 /* OWActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OWActivity.h; sourceTree = "<group>"; };
-		6FF83CDC184390CF00BF30C2 /* OWActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OWActivity.m; sourceTree = "<group>"; };
-		6FF83CDD184390CF00BF30C2 /* OWActivityDelegateObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OWActivityDelegateObject.h; sourceTree = "<group>"; };
-		6FF83CDE184390CF00BF30C2 /* OWActivityDelegateObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OWActivityDelegateObject.m; sourceTree = "<group>"; };
-		6FF83CDF184390CF00BF30C2 /* OWActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OWActivityView.h; sourceTree = "<group>"; };
-		6FF83CE0184390CF00BF30C2 /* OWActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OWActivityView.m; sourceTree = "<group>"; };
-		6FF83CE1184390CF00BF30C2 /* OWActivityViewController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = OWActivityViewController.bundle; sourceTree = "<group>"; };
-		6FF83CE2184390CF00BF30C2 /* OWActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OWActivityViewController.h; sourceTree = "<group>"; };
-		6FF83CE3184390CF00BF30C2 /* OWActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OWActivityViewController.m; sourceTree = "<group>"; };
-		6FF83CE4184390CF00BF30C2 /* OWCopyActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OWCopyActivity.h; sourceTree = "<group>"; };
-		6FF83CE5184390CF00BF30C2 /* OWCopyActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OWCopyActivity.m; sourceTree = "<group>"; };
-		6FF83CE6184390CF00BF30C2 /* OWFacebookActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OWFacebookActivity.h; sourceTree = "<group>"; };
-		6FF83CE7184390CF00BF30C2 /* OWFacebookActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OWFacebookActivity.m; sourceTree = "<group>"; };
-		6FF83CE8184390CF00BF30C2 /* OWMailActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OWMailActivity.h; sourceTree = "<group>"; };
-		6FF83CE9184390CF00BF30C2 /* OWMailActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OWMailActivity.m; sourceTree = "<group>"; };
-		6FF83CEA184390CF00BF30C2 /* OWMapsActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OWMapsActivity.h; sourceTree = "<group>"; };
-		6FF83CEB184390CF00BF30C2 /* OWMapsActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OWMapsActivity.m; sourceTree = "<group>"; };
-		6FF83CEC184390CF00BF30C2 /* OWMessageActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OWMessageActivity.h; sourceTree = "<group>"; };
-		6FF83CED184390D000BF30C2 /* OWMessageActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OWMessageActivity.m; sourceTree = "<group>"; };
-		6FF83CEE184390D000BF30C2 /* OWPrintActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OWPrintActivity.h; sourceTree = "<group>"; };
-		6FF83CEF184390D000BF30C2 /* OWPrintActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OWPrintActivity.m; sourceTree = "<group>"; };
-		6FF83CF0184390D000BF30C2 /* OWSafariActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OWSafariActivity.h; sourceTree = "<group>"; };
-		6FF83CF1184390D000BF30C2 /* OWSafariActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OWSafariActivity.m; sourceTree = "<group>"; };
-		6FF83CF2184390D000BF30C2 /* OWSaveToCameraRollActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OWSaveToCameraRollActivity.h; sourceTree = "<group>"; };
-		6FF83CF3184390D000BF30C2 /* OWSaveToCameraRollActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OWSaveToCameraRollActivity.m; sourceTree = "<group>"; };
-		6FF83CF4184390D000BF30C2 /* OWSinaWeiboActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OWSinaWeiboActivity.h; sourceTree = "<group>"; };
-		6FF83CF5184390D000BF30C2 /* OWSinaWeiboActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OWSinaWeiboActivity.m; sourceTree = "<group>"; };
-		6FF83CF6184390D000BF30C2 /* OWTwitterActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OWTwitterActivity.h; sourceTree = "<group>"; };
-		6FF83CF7184390D000BF30C2 /* OWTwitterActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OWTwitterActivity.m; sourceTree = "<group>"; };
-		6FF83CF8184390D000BF30C2 /* OWWeChatActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OWWeChatActivity.h; sourceTree = "<group>"; };
-		6FF83CF9184390D000BF30C2 /* OWWeChatActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OWWeChatActivity.m; sourceTree = "<group>"; };
-		6FF83CFA184390D000BF30C2 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
-		6FF83CFB184390D000BF30C2 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
-		6FF83CFD184390D000BF30C2 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
-		6FF83CFE184390D000BF30C2 /* libWeChatSDK_armv7_armv7s.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK_armv7_armv7s.a; sourceTree = "<group>"; };
-		6FF83CFF184390D000BF30C2 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
-		6FF83D00184390D000BF30C2 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
-		6FF83D01184390D000BF30C2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/OWActivityViewController.strings"; sourceTree = "<group>"; };
-		6FF83D181843913C00BF30C2 /* DEFacebookComposeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DEFacebookComposeView.xib; sourceTree = "<group>"; };
-		6FF83D191843913C00BF30C2 /* DEFacebookComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEFacebookComposeViewController.h; sourceTree = "<group>"; };
-		6FF83D1A1843913C00BF30C2 /* DEFacebookComposeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEFacebookComposeViewController.m; sourceTree = "<group>"; };
-		6FF83D1B1843913C00BF30C2 /* DEFacebookGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEFacebookGradientView.h; sourceTree = "<group>"; };
-		6FF83D1C1843913C00BF30C2 /* DEFacebookGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEFacebookGradientView.m; sourceTree = "<group>"; };
-		6FF83D1D1843913C00BF30C2 /* DEFacebookSheetCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEFacebookSheetCardView.h; sourceTree = "<group>"; };
-		6FF83D1E1843913C00BF30C2 /* DEFacebookSheetCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEFacebookSheetCardView.m; sourceTree = "<group>"; };
-		6FF83D1F1843913C00BF30C2 /* DEFacebookTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEFacebookTextView.h; sourceTree = "<group>"; };
-		6FF83D201843913C00BF30C2 /* DEFacebookTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEFacebookTextView.m; sourceTree = "<group>"; };
-		6FF83D211843913C00BF30C2 /* DERuledView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DERuledView.h; sourceTree = "<group>"; };
-		6FF83D221843913C00BF30C2 /* DERuledView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DERuledView.m; sourceTree = "<group>"; };
-		6FF83D241843913C00BF30C2 /* DEFacebookAttachmentFrame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DEFacebookAttachmentFrame.png; sourceTree = "<group>"; };
-		6FF83D251843913C00BF30C2 /* DEFacebookAttachmentFrame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DEFacebookAttachmentFrame@2x.png"; sourceTree = "<group>"; };
-		6FF83D261843913C00BF30C2 /* DEFacebookCancelButtonLandscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DEFacebookCancelButtonLandscape.png; sourceTree = "<group>"; };
-		6FF83D271843913C00BF30C2 /* DEFacebookCancelButtonLandscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DEFacebookCancelButtonLandscape@2x.png"; sourceTree = "<group>"; };
-		6FF83D281843913C00BF30C2 /* DEFacebookCancelButtonPortrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DEFacebookCancelButtonPortrait.png; sourceTree = "<group>"; };
-		6FF83D291843913C00BF30C2 /* DEFacebookCancelButtonPortrait@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DEFacebookCancelButtonPortrait@2x.png"; sourceTree = "<group>"; };
-		6FF83D2A1843913C00BF30C2 /* DEFacebookCardAccountLine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DEFacebookCardAccountLine.png; sourceTree = "<group>"; };
-		6FF83D2B1843913C00BF30C2 /* DEFacebookCardAccountLine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DEFacebookCardAccountLine@2x.png"; sourceTree = "<group>"; };
-		6FF83D2C1843913C00BF30C2 /* DEFacebookCardBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DEFacebookCardBackground.png; sourceTree = "<group>"; };
-		6FF83D2D1843913C00BF30C2 /* DEFacebookCardBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DEFacebookCardBackground@2x.png"; sourceTree = "<group>"; };
-		6FF83D2E1843913C00BF30C2 /* DEFacebookCardHeaderLine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DEFacebookCardHeaderLine.png; sourceTree = "<group>"; };
-		6FF83D2F1843913C00BF30C2 /* DEFacebookCardHeaderLine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DEFacebookCardHeaderLine@2x.png"; sourceTree = "<group>"; };
-		6FF83D301843913C00BF30C2 /* DEFacebookPaperClip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DEFacebookPaperClip.png; sourceTree = "<group>"; };
-		6FF83D311843913C00BF30C2 /* DEFacebookPaperClip@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DEFacebookPaperClip@2x.png"; sourceTree = "<group>"; };
-		6FF83D321843913C00BF30C2 /* DEFacebookSendButtonLandscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DEFacebookSendButtonLandscape.png; sourceTree = "<group>"; };
-		6FF83D331843913C00BF30C2 /* DEFacebookSendButtonLandscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DEFacebookSendButtonLandscape@2x.png"; sourceTree = "<group>"; };
-		6FF83D341843913C00BF30C2 /* DEFacebookSendButtonPortrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DEFacebookSendButtonPortrait.png; sourceTree = "<group>"; };
-		6FF83D351843913C00BF30C2 /* DEFacebookSendButtonPortrait@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DEFacebookSendButtonPortrait@2x.png"; sourceTree = "<group>"; };
-		6FF83D361843913C00BF30C2 /* DEFacebookURLAttachment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DEFacebookURLAttachment.png; sourceTree = "<group>"; };
-		6FF83D371843913C00BF30C2 /* DEFacebookURLAttachment@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DEFacebookURLAttachment@2x.png"; sourceTree = "<group>"; };
-		6FF83D381843913C00BF30C2 /* NavBarLandscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavBarLandscape.png; sourceTree = "<group>"; };
-		6FF83D391843913C00BF30C2 /* NavBarLandscape1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavBarLandscape1.png; sourceTree = "<group>"; };
-		6FF83D3A1843913C00BF30C2 /* NavBarLandscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavBarLandscape@2x.png"; sourceTree = "<group>"; };
-		6FF83D3B1843913C00BF30C2 /* NavBarLandscape@2x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavBarLandscape@2x1.png"; sourceTree = "<group>"; };
-		6FF83D3C1843913C00BF30C2 /* UIApplication+DEFacebookComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+DEFacebookComposeViewController.h"; sourceTree = "<group>"; };
-		6FF83D3D1843913C00BF30C2 /* UIApplication+DEFacebookComposeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+DEFacebookComposeViewController.m"; sourceTree = "<group>"; };
-		6FF83D3E1843913C00BF30C2 /* UIDevice+DEFacebookComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+DEFacebookComposeViewController.h"; sourceTree = "<group>"; };
-		6FF83D3F1843913C00BF30C2 /* UIDevice+DEFacebookComposeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+DEFacebookComposeViewController.m"; sourceTree = "<group>"; };
-		6FF83D6618439BB900BF30C2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		6FF83D6818439EB400BF30C2 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		6FF70812182A41F800A05F1E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6FF83D6718439BB900BF30C2 /* QuartzCore.framework in Frameworks */,
-				6FF83C0A18437F8800BF30C2 /* Social.framework in Frameworks */,
-				6FF83ADF18435B0E00BF30C2 /* AssetsLibrary.framework in Frameworks */,
-				6FF83ADB18435A8A00BF30C2 /* Twitter.framework in Frameworks */,
-				6FEC320C1842353400BB74BA /* SystemConfiguration.framework in Frameworks */,
-				6FEC320A1842352100BB74BA /* Security.framework in Frameworks */,
-				6FEC32081842350E00BB74BA /* MessageUI.framework in Frameworks */,
-				6FF83D611843934D00BF30C2 /* libWeChatSDK_armv7_armv7s.a in Frameworks */,
-				6FF83D6918439EB400BF30C2 /* FacebookSDK.framework in Frameworks */,
-				6FF7081B182A41F900A05F1E /* CoreGraphics.framework in Frameworks */,
-				6FF7081D182A41F900A05F1E /* UIKit.framework in Frameworks */,
-				6FF83D601843934A00BF30C2 /* libWeChatSDK.a in Frameworks */,
-				6FF70819182A41F900A05F1E /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6FF70836182A41F900A05F1E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6FF7083B182A41F900A05F1E /* XCTest.framework in Frameworks */,
-				6FF7083D182A41F900A05F1E /* UIKit.framework in Frameworks */,
-				6FF7083C182A41F900A05F1E /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		6F0CEBF6183DF5D90099B38D /* SearchViewController */ = {
-			isa = PBXGroup;
-			children = (
-				6F0CEBF7183DF6050099B38D /* SearchViewController.h */,
-				6F0CEBF8183DF6050099B38D /* SearchViewController.m */,
-			);
-			name = SearchViewController;
-			sourceTree = "<group>";
-		};
-		6F6DB8181844B84C00CC9DB7 /* ADMC_APIsWork */ = {
-			isa = PBXGroup;
-			children = (
-				6F6DB8191844BA6000CC9DB7 /* ADMC_URLS.h */,
-				6F6DB81A1844BA6000CC9DB7 /* ADMC_URLS.m */,
-			);
-			name = ADMC_APIsWork;
-			sourceTree = "<group>";
-		};
-		6F9823B1183CB3B400001231 /* PageControllerViews */ = {
-			isa = PBXGroup;
-			children = (
-				6F9823B2183CB3E200001231 /* PageControlViewController.h */,
-				6F9823B3183CB3E200001231 /* PageControlViewController.m */,
-			);
-			name = PageControllerViews;
-			sourceTree = "<group>";
-		};
-		6F9823B6183D01E500001231 /* CustomCells */ = {
-			isa = PBXGroup;
-			children = (
-				6F9823B7183D021000001231 /* GeneralCell.h */,
-				6F9823B8183D021000001231 /* GeneralCell.m */,
-			);
-			name = CustomCells;
-			sourceTree = "<group>";
-		};
-		6FC2E3D7183B6253000E21DD /* UIViewsControllers */ = {
-			isa = PBXGroup;
-			children = (
-				6F0CEBF6183DF5D90099B38D /* SearchViewController */,
-				6F9823B6183D01E500001231 /* CustomCells */,
-				6F9823B1183CB3B400001231 /* PageControllerViews */,
-				6FC2E3D8183B636E000E21DD /* NewsViewController.h */,
-				6FC2E3D9183B636E000E21DD /* NewsViewController.m */,
-				6F0CEBFD183E16460099B38D /* NewsDetailsViewController.h */,
-				6F0CEBFE183E16460099B38D /* NewsDetailsViewController.m */,
-				6FC2E3DA183B636E000E21DD /* MatchesViewController.h */,
-				6FC2E3DB183B636E000E21DD /* MatchesViewController.m */,
-				6FC2E3DC183B636E000E21DD /* SplashViewController.h */,
-				6FC2E3DD183B636E000E21DD /* SplashViewController.m */,
-				6FC2E3E9183B6D3E000E21DD /* MediaViewController.h */,
-				6FC2E3EA183B6D3E000E21DD /* MediaViewController.m */,
-				6FC2E3EC183B6D69000E21DD /* FavouritesViewController.h */,
-				6FC2E3ED183B6D69000E21DD /* FavouritesViewController.m */,
-				6FC2E3EF183B6D7E000E21DD /* MoreViewController.h */,
-				6FC2E3F0183B6D7E000E21DD /* MoreViewController.m */,
-				6FEC3127184214EB00BB74BA /* AddCommentViewController.h */,
-				6FEC3128184214EB00BB74BA /* AddCommentViewController.m */,
-			);
-			path = UIViewsControllers;
-			sourceTree = "<group>";
-		};
-		6FC2E3E1183B6387000E21DD /* AppDelegate */ = {
-			isa = PBXGroup;
-			children = (
-				6FC2E3E2183B6387000E21DD /* AppDelegate.h */,
-				6FC2E3E3183B6387000E21DD /* AppDelegate.m */,
-			);
-			path = AppDelegate;
-			sourceTree = "<group>";
-		};
-		6FC2E3E5183B696F000E21DD /* images */ = {
-			isa = PBXGroup;
-			children = (
-				6FC2E3E6183B697B000E21DD /* splash.jpg */,
-			);
-			path = images;
-			sourceTree = "<group>";
-		};
-		6FF7080C182A41F800A05F1E = {
-			isa = PBXGroup;
-			children = (
-				6FF83A901843522000BF30C2 /* ThirdPartyLibraries */,
-				6FF7081E182A41F900A05F1E /* ADMC_iPhone */,
-				6FF70840182A41F900A05F1E /* ADMC_iPhoneTests */,
-				6FF70817182A41F900A05F1E /* Frameworks */,
-				6FF70816182A41F900A05F1E /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		6FF70816182A41F900A05F1E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				6FF70815182A41F900A05F1E /* ADMC_iPhone.app */,
-				6FF70839182A41F900A05F1E /* ADMC_iPhoneTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		6FF70817182A41F900A05F1E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6FF83D6818439EB400BF30C2 /* FacebookSDK.framework */,
-				6FF83D6618439BB900BF30C2 /* QuartzCore.framework */,
-				6FF83C0918437F8800BF30C2 /* Social.framework */,
-				6FF83ADE18435B0E00BF30C2 /* AssetsLibrary.framework */,
-				6FF83ADA18435A8A00BF30C2 /* Twitter.framework */,
-				6FEC320B1842353400BB74BA /* SystemConfiguration.framework */,
-				6FEC32091842352100BB74BA /* Security.framework */,
-				6FEC32071842350E00BB74BA /* MessageUI.framework */,
-				6FF70818182A41F900A05F1E /* Foundation.framework */,
-				6FF7081A182A41F900A05F1E /* CoreGraphics.framework */,
-				6FF7081C182A41F900A05F1E /* UIKit.framework */,
-				6FF7083A182A41F900A05F1E /* XCTest.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		6FF7081E182A41F900A05F1E /* ADMC_iPhone */ = {
-			isa = PBXGroup;
-			children = (
-				6F6DB8181844B84C00CC9DB7 /* ADMC_APIsWork */,
-				6FC2E3E5183B696F000E21DD /* images */,
-				6FC2E3E1183B6387000E21DD /* AppDelegate */,
-				6FC2E3D7183B6253000E21DD /* UIViewsControllers */,
-				6FF7082A182A41F900A05F1E /* ADMCStoryBoard.storyboard */,
-				6FF70833182A41F900A05F1E /* Images.xcassets */,
-				6FF7081F182A41F900A05F1E /* Supporting Files */,
-			);
-			path = ADMC_iPhone;
-			sourceTree = "<group>";
-		};
-		6FF7081F182A41F900A05F1E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				6FF70820182A41F900A05F1E /* ADMC_iPhone-Info.plist */,
-				6FF70821182A41F900A05F1E /* InfoPlist.strings */,
-				6FF70824182A41F900A05F1E /* main.m */,
-				6FF70826182A41F900A05F1E /* ADMC_iPhone-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		6FF70840182A41F900A05F1E /* ADMC_iPhoneTests */ = {
-			isa = PBXGroup;
-			children = (
-				6FF70846182A41F900A05F1E /* ADMC_iPhoneTests.m */,
-				6FF70841182A41F900A05F1E /* Supporting Files */,
-			);
-			path = ADMC_iPhoneTests;
-			sourceTree = "<group>";
-		};
-		6FF70841182A41F900A05F1E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				6FF70842182A41F900A05F1E /* ADMC_iPhoneTests-Info.plist */,
-				6FF70843182A41F900A05F1E /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		6FF83A901843522000BF30C2 /* ThirdPartyLibraries */ = {
-			isa = PBXGroup;
-			children = (
-				6FF83D171843913C00BF30C2 /* FacebookComposeViewController */,
-				6FF83CCE184390CF00BF30C2 /* OWActivityViewController */,
-			);
-			name = ThirdPartyLibraries;
-			sourceTree = "<group>";
-		};
-		6FF83CCE184390CF00BF30C2 /* OWActivityViewController */ = {
-			isa = PBXGroup;
-			children = (
-				6FF83CCF184390CF00BF30C2 /* OWActivityViewController.strings */,
-				6FF83CD1184390CF00BF30C2 /* Localizations */,
-				6FF83CDA184390CF00BF30C2 /* OWActivities.h */,
-				6FF83CDB184390CF00BF30C2 /* OWActivity.h */,
-				6FF83CDC184390CF00BF30C2 /* OWActivity.m */,
-				6FF83CDD184390CF00BF30C2 /* OWActivityDelegateObject.h */,
-				6FF83CDE184390CF00BF30C2 /* OWActivityDelegateObject.m */,
-				6FF83CDF184390CF00BF30C2 /* OWActivityView.h */,
-				6FF83CE0184390CF00BF30C2 /* OWActivityView.m */,
-				6FF83CE1184390CF00BF30C2 /* OWActivityViewController.bundle */,
-				6FF83CE2184390CF00BF30C2 /* OWActivityViewController.h */,
-				6FF83CE3184390CF00BF30C2 /* OWActivityViewController.m */,
-				6FF83CE4184390CF00BF30C2 /* OWCopyActivity.h */,
-				6FF83CE5184390CF00BF30C2 /* OWCopyActivity.m */,
-				6FF83CE6184390CF00BF30C2 /* OWFacebookActivity.h */,
-				6FF83CE7184390CF00BF30C2 /* OWFacebookActivity.m */,
-				6FF83CE8184390CF00BF30C2 /* OWMailActivity.h */,
-				6FF83CE9184390CF00BF30C2 /* OWMailActivity.m */,
-				6FF83CEA184390CF00BF30C2 /* OWMapsActivity.h */,
-				6FF83CEB184390CF00BF30C2 /* OWMapsActivity.m */,
-				6FF83CEC184390CF00BF30C2 /* OWMessageActivity.h */,
-				6FF83CED184390D000BF30C2 /* OWMessageActivity.m */,
-				6FF83CEE184390D000BF30C2 /* OWPrintActivity.h */,
-				6FF83CEF184390D000BF30C2 /* OWPrintActivity.m */,
-				6FF83CF0184390D000BF30C2 /* OWSafariActivity.h */,
-				6FF83CF1184390D000BF30C2 /* OWSafariActivity.m */,
-				6FF83CF2184390D000BF30C2 /* OWSaveToCameraRollActivity.h */,
-				6FF83CF3184390D000BF30C2 /* OWSaveToCameraRollActivity.m */,
-				6FF83CF4184390D000BF30C2 /* OWSinaWeiboActivity.h */,
-				6FF83CF5184390D000BF30C2 /* OWSinaWeiboActivity.m */,
-				6FF83CF6184390D000BF30C2 /* OWTwitterActivity.h */,
-				6FF83CF7184390D000BF30C2 /* OWTwitterActivity.m */,
-				6FF83CF8184390D000BF30C2 /* OWWeChatActivity.h */,
-				6FF83CF9184390D000BF30C2 /* OWWeChatActivity.m */,
-				6FF83CFA184390D000BF30C2 /* UIImage+Resize.h */,
-				6FF83CFB184390D000BF30C2 /* UIImage+Resize.m */,
-				6FF83CFC184390D000BF30C2 /* WeChatSDK */,
-			);
-			path = OWActivityViewController;
-			sourceTree = "<group>";
-		};
-		6FF83CD1184390CF00BF30C2 /* Localizations */ = {
-			isa = PBXGroup;
-			children = (
-				6FF83CD2184390CF00BF30C2 /* OWActivityViewController.strings */,
-			);
-			path = Localizations;
-			sourceTree = "<group>";
-		};
-		6FF83CFC184390D000BF30C2 /* WeChatSDK */ = {
-			isa = PBXGroup;
-			children = (
-				6FF83CFD184390D000BF30C2 /* libWeChatSDK.a */,
-				6FF83CFE184390D000BF30C2 /* libWeChatSDK_armv7_armv7s.a */,
-				6FF83CFF184390D000BF30C2 /* WXApi.h */,
-				6FF83D00184390D000BF30C2 /* WXApiObject.h */,
-			);
-			path = WeChatSDK;
-			sourceTree = "<group>";
-		};
-		6FF83D171843913C00BF30C2 /* FacebookComposeViewController */ = {
-			isa = PBXGroup;
-			children = (
-				6FF83D181843913C00BF30C2 /* DEFacebookComposeView.xib */,
-				6FF83D191843913C00BF30C2 /* DEFacebookComposeViewController.h */,
-				6FF83D1A1843913C00BF30C2 /* DEFacebookComposeViewController.m */,
-				6FF83D1B1843913C00BF30C2 /* DEFacebookGradientView.h */,
-				6FF83D1C1843913C00BF30C2 /* DEFacebookGradientView.m */,
-				6FF83D1D1843913C00BF30C2 /* DEFacebookSheetCardView.h */,
-				6FF83D1E1843913C00BF30C2 /* DEFacebookSheetCardView.m */,
-				6FF83D1F1843913C00BF30C2 /* DEFacebookTextView.h */,
-				6FF83D201843913C00BF30C2 /* DEFacebookTextView.m */,
-				6FF83D211843913C00BF30C2 /* DERuledView.h */,
-				6FF83D221843913C00BF30C2 /* DERuledView.m */,
-				6FF83D231843913C00BF30C2 /* Resources */,
-				6FF83D3C1843913C00BF30C2 /* UIApplication+DEFacebookComposeViewController.h */,
-				6FF83D3D1843913C00BF30C2 /* UIApplication+DEFacebookComposeViewController.m */,
-				6FF83D3E1843913C00BF30C2 /* UIDevice+DEFacebookComposeViewController.h */,
-				6FF83D3F1843913C00BF30C2 /* UIDevice+DEFacebookComposeViewController.m */,
-			);
-			path = FacebookComposeViewController;
-			sourceTree = "<group>";
-		};
-		6FF83D231843913C00BF30C2 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				6FF83D241843913C00BF30C2 /* DEFacebookAttachmentFrame.png */,
-				6FF83D251843913C00BF30C2 /* DEFacebookAttachmentFrame@2x.png */,
-				6FF83D261843913C00BF30C2 /* DEFacebookCancelButtonLandscape.png */,
-				6FF83D271843913C00BF30C2 /* DEFacebookCancelButtonLandscape@2x.png */,
-				6FF83D281843913C00BF30C2 /* DEFacebookCancelButtonPortrait.png */,
-				6FF83D291843913C00BF30C2 /* DEFacebookCancelButtonPortrait@2x.png */,
-				6FF83D2A1843913C00BF30C2 /* DEFacebookCardAccountLine.png */,
-				6FF83D2B1843913C00BF30C2 /* DEFacebookCardAccountLine@2x.png */,
-				6FF83D2C1843913C00BF30C2 /* DEFacebookCardBackground.png */,
-				6FF83D2D1843913C00BF30C2 /* DEFacebookCardBackground@2x.png */,
-				6FF83D2E1843913C00BF30C2 /* DEFacebookCardHeaderLine.png */,
-				6FF83D2F1843913C00BF30C2 /* DEFacebookCardHeaderLine@2x.png */,
-				6FF83D301843913C00BF30C2 /* DEFacebookPaperClip.png */,
-				6FF83D311843913C00BF30C2 /* DEFacebookPaperClip@2x.png */,
-				6FF83D321843913C00BF30C2 /* DEFacebookSendButtonLandscape.png */,
-				6FF83D331843913C00BF30C2 /* DEFacebookSendButtonLandscape@2x.png */,
-				6FF83D341843913C00BF30C2 /* DEFacebookSendButtonPortrait.png */,
-				6FF83D351843913C00BF30C2 /* DEFacebookSendButtonPortrait@2x.png */,
-				6FF83D361843913C00BF30C2 /* DEFacebookURLAttachment.png */,
-				6FF83D371843913C00BF30C2 /* DEFacebookURLAttachment@2x.png */,
-				6FF83D381843913C00BF30C2 /* NavBarLandscape.png */,
-				6FF83D391843913C00BF30C2 /* NavBarLandscape1.png */,
-				6FF83D3A1843913C00BF30C2 /* NavBarLandscape@2x.png */,
-				6FF83D3B1843913C00BF30C2 /* NavBarLandscape@2x1.png */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		6FF70814182A41F800A05F1E /* ADMC_iPhone */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6FF7084A182A41F900A05F1E /* Build configuration list for PBXNativeTarget "ADMC_iPhone" */;
-			buildPhases = (
-				6FF70811182A41F800A05F1E /* Sources */,
-				6FF70812182A41F800A05F1E /* Frameworks */,
-				6FF70813182A41F800A05F1E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ADMC_iPhone;
-			productName = ADMC_iPhone;
-			productReference = 6FF70815182A41F900A05F1E /* ADMC_iPhone.app */;
-			productType = "com.apple.product-type.application";
-		};
-		6FF70838182A41F900A05F1E /* ADMC_iPhoneTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6FF7084D182A41F900A05F1E /* Build configuration list for PBXNativeTarget "ADMC_iPhoneTests" */;
-			buildPhases = (
-				6FF70835182A41F900A05F1E /* Sources */,
-				6FF70836182A41F900A05F1E /* Frameworks */,
-				6FF70837182A41F900A05F1E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6FF7083F182A41F900A05F1E /* PBXTargetDependency */,
-			);
-			name = ADMC_iPhoneTests;
-			productName = ADMC_iPhoneTests;
-			productReference = 6FF70839182A41F900A05F1E /* ADMC_iPhoneTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		6FF7080D182A41F800A05F1E /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0500;
-				ORGANIZATIONNAME = Sarmady;
-				TargetAttributes = {
-					6FF70838182A41F900A05F1E = {
-						TestTargetID = 6FF70814182A41F800A05F1E;
-					};
-				};
-			};
-			buildConfigurationList = 6FF70810182A41F800A05F1E /* Build configuration list for PBXProject "ADMC_iPhone" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-				de,
-				es,
-				fr,
-				ru,
-				sv,
-				"zh-Hans",
-				it,
-				uk,
-			);
-			mainGroup = 6FF7080C182A41F800A05F1E;
-			productRefGroup = 6FF70816182A41F900A05F1E /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				6FF70814182A41F800A05F1E /* ADMC_iPhone */,
-				6FF70838182A41F900A05F1E /* ADMC_iPhoneTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		6FF70813182A41F800A05F1E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6FF83D03184390D000BF30C2 /* OWActivityViewController.strings in Resources */,
-				6FF83D541843913C00BF30C2 /* DEFacebookSendButtonLandscape.png in Resources */,
-				6FF83D4C1843913C00BF30C2 /* DEFacebookCardAccountLine.png in Resources */,
-				6FF83D4F1843913C00BF30C2 /* DEFacebookCardBackground@2x.png in Resources */,
-				6FC2E3E7183B697B000E21DD /* splash.jpg in Resources */,
-				6FF83D4E1843913C00BF30C2 /* DEFacebookCardBackground.png in Resources */,
-				6FF70834182A41F900A05F1E /* Images.xcassets in Resources */,
-				6FF83D401843913C00BF30C2 /* DEFacebookComposeView.xib in Resources */,
-				6FF83D07184390D000BF30C2 /* OWActivityViewController.bundle in Resources */,
-				6FF83D5A1843913C00BF30C2 /* NavBarLandscape.png in Resources */,
-				6FF83D461843913C00BF30C2 /* DEFacebookAttachmentFrame.png in Resources */,
-				6FF83D02184390D000BF30C2 /* OWActivityViewController.strings in Resources */,
-				6FF83D581843913C00BF30C2 /* DEFacebookURLAttachment.png in Resources */,
-				6FF83D511843913C00BF30C2 /* DEFacebookCardHeaderLine@2x.png in Resources */,
-				6FF83D5B1843913C00BF30C2 /* NavBarLandscape1.png in Resources */,
-				6FF83D521843913C00BF30C2 /* DEFacebookPaperClip.png in Resources */,
-				6FF70823182A41F900A05F1E /* InfoPlist.strings in Resources */,
-				6FF83D491843913C00BF30C2 /* DEFacebookCancelButtonLandscape@2x.png in Resources */,
-				6FF83D5C1843913C00BF30C2 /* NavBarLandscape@2x.png in Resources */,
-				6FF83D4A1843913C00BF30C2 /* DEFacebookCancelButtonPortrait.png in Resources */,
-				6FF83D501843913C00BF30C2 /* DEFacebookCardHeaderLine.png in Resources */,
-				6FF83D571843913C00BF30C2 /* DEFacebookSendButtonPortrait@2x.png in Resources */,
-				6FF83D481843913C00BF30C2 /* DEFacebookCancelButtonLandscape.png in Resources */,
-				6FF83D531843913C00BF30C2 /* DEFacebookPaperClip@2x.png in Resources */,
-				6FF83D591843913C00BF30C2 /* DEFacebookURLAttachment@2x.png in Resources */,
-				6FF83D5D1843913C00BF30C2 /* NavBarLandscape@2x1.png in Resources */,
-				6FF83D551843913C00BF30C2 /* DEFacebookSendButtonLandscape@2x.png in Resources */,
-				6FF83D561843913C00BF30C2 /* DEFacebookSendButtonPortrait.png in Resources */,
-				6FF83D471843913C00BF30C2 /* DEFacebookAttachmentFrame@2x.png in Resources */,
-				6FF83D4D1843913C00BF30C2 /* DEFacebookCardAccountLine@2x.png in Resources */,
-				6FF83D4B1843913C00BF30C2 /* DEFacebookCancelButtonPortrait@2x.png in Resources */,
-				6FF7082C182A41F900A05F1E /* ADMCStoryBoard.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6FF70837182A41F900A05F1E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6FF70845182A41F900A05F1E /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		6FF70811182A41F800A05F1E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6FF83D0D184390D000BF30C2 /* OWMessageActivity.m in Sources */,
-				6FF83D431843913C00BF30C2 /* DEFacebookSheetCardView.m in Sources */,
-				6FEC3129184214EB00BB74BA /* AddCommentViewController.m in Sources */,
-				6FC2E3DE183B636E000E21DD /* NewsViewController.m in Sources */,
-				6FF83D06184390D000BF30C2 /* OWActivityView.m in Sources */,
-				6F9823B4183CB3E200001231 /* PageControlViewController.m in Sources */,
-				6FF83D04184390D000BF30C2 /* OWActivity.m in Sources */,
-				6FF83D05184390D000BF30C2 /* OWActivityDelegateObject.m in Sources */,
-				6F9823B9183D021000001231 /* GeneralCell.m in Sources */,
-				6FC2E3F1183B6D7E000E21DD /* MoreViewController.m in Sources */,
-				6FF83D5E1843913C00BF30C2 /* UIApplication+DEFacebookComposeViewController.m in Sources */,
-				6FF83D11184390D000BF30C2 /* OWSinaWeiboActivity.m in Sources */,
-				6FF83D0A184390D000BF30C2 /* OWFacebookActivity.m in Sources */,
-				6F0CEBFF183E16460099B38D /* NewsDetailsViewController.m in Sources */,
-				6FF83D14184390D000BF30C2 /* UIImage+Resize.m in Sources */,
-				6FC2E3EB183B6D3E000E21DD /* MediaViewController.m in Sources */,
-				6FF83D441843913C00BF30C2 /* DEFacebookTextView.m in Sources */,
-				6FF83D421843913C00BF30C2 /* DEFacebookGradientView.m in Sources */,
-				6FF83D08184390D000BF30C2 /* OWActivityViewController.m in Sources */,
-				6F6DB81B1844BA6000CC9DB7 /* ADMC_URLS.m in Sources */,
-				6FF83D5F1843913C00BF30C2 /* UIDevice+DEFacebookComposeViewController.m in Sources */,
-				6FC2E3E0183B636E000E21DD /* SplashViewController.m in Sources */,
-				6FF83D411843913C00BF30C2 /* DEFacebookComposeViewController.m in Sources */,
-				6FC2E3DF183B636E000E21DD /* MatchesViewController.m in Sources */,
-				6FF83D13184390D000BF30C2 /* OWWeChatActivity.m in Sources */,
-				6FF83D0C184390D000BF30C2 /* OWMapsActivity.m in Sources */,
-				6FF70825182A41F900A05F1E /* main.m in Sources */,
-				6FF83D0E184390D000BF30C2 /* OWPrintActivity.m in Sources */,
-				6FF83D09184390D000BF30C2 /* OWCopyActivity.m in Sources */,
-				6FF83D0B184390D000BF30C2 /* OWMailActivity.m in Sources */,
-				6F0CEBF9183DF6050099B38D /* SearchViewController.m in Sources */,
-				6FC2E3EE183B6D69000E21DD /* FavouritesViewController.m in Sources */,
-				6FF83D12184390D000BF30C2 /* OWTwitterActivity.m in Sources */,
-				6FF83D451843913C00BF30C2 /* DERuledView.m in Sources */,
-				6FC2E3E4183B6387000E21DD /* AppDelegate.m in Sources */,
-				6FF83D0F184390D000BF30C2 /* OWSafariActivity.m in Sources */,
-				6FF83D10184390D000BF30C2 /* OWSaveToCameraRollActivity.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6FF70835182A41F900A05F1E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6FF70847182A41F900A05F1E /* ADMC_iPhoneTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		6FF7083F182A41F900A05F1E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6FF70814182A41F800A05F1E /* ADMC_iPhone */;
-			targetProxy = 6FF7083E182A41F900A05F1E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		6FF70821182A41F900A05F1E /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6FF70822182A41F900A05F1E /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		6FF7082A182A41F900A05F1E /* ADMCStoryBoard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6FC2E3F2183B9EE0000E21DD /* en */,
-			);
-			name = ADMCStoryBoard.storyboard;
-			sourceTree = "<group>";
-		};
-		6FF70843182A41F900A05F1E /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6FF70844182A41F900A05F1E /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		6FF83CCF184390CF00BF30C2 /* OWActivityViewController.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6FF83CD0184390CF00BF30C2 /* en */,
-				6FF83D01184390D000BF30C2 /* zh-Hans */,
-			);
-			name = OWActivityViewController.strings;
-			sourceTree = "<group>";
-		};
-		6FF83CD2184390CF00BF30C2 /* OWActivityViewController.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6FF83CD3184390CF00BF30C2 /* de */,
-				6FF83CD4184390CF00BF30C2 /* en */,
-				6FF83CD5184390CF00BF30C2 /* es */,
-				6FF83CD6184390CF00BF30C2 /* fr */,
-				6FF83CD7184390CF00BF30C2 /* ru */,
-				6FF83CD8184390CF00BF30C2 /* sv */,
-				6FF83CD9184390CF00BF30C2 /* zh-Hans */,
-			);
-			name = OWActivityViewController.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		6FF70848182A41F900A05F1E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		6FF70849182A41F900A05F1E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		6FF7084B182A41F900A05F1E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/yomna/Desktop/super.ae_iPhone,
-					/Users/yomna/Documents/FacebookSDK,
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ADMC_iPhone/ADMC_iPhone-Prefix.pch";
-				GCC_VERSION = "";
-				INFOPLIST_FILE = "ADMC_iPhone/ADMC_iPhone-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/yomna/Desktop/super.ae_iPhone/OWActivityViewController/WeChatSDK,
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
-				VALID_ARCHS = "armv7 armv7s arm64";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		6FF7084C182A41F900A05F1E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/yomna/Desktop/super.ae_iPhone,
-					/Users/yomna/Documents/FacebookSDK,
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ADMC_iPhone/ADMC_iPhone-Prefix.pch";
-				GCC_VERSION = "";
-				INFOPLIST_FILE = "ADMC_iPhone/ADMC_iPhone-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/yomna/Desktop/super.ae_iPhone/OWActivityViewController/WeChatSDK,
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
-				VALID_ARCHS = "armv7 armv7s arm64";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		6FF7084E182A41F900A05F1E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ADMC_iPhone.app/ADMC_iPhone";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ADMC_iPhone/ADMC_iPhone-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "ADMC_iPhoneTests/ADMC_iPhoneTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		6FF7084F182A41F900A05F1E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ADMC_iPhone.app/ADMC_iPhone";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ADMC_iPhone/ADMC_iPhone-Prefix.pch";
-				INFOPLIST_FILE = "ADMC_iPhoneTests/ADMC_iPhoneTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		6FF70810182A41F800A05F1E /* Build configuration list for PBXProject "ADMC_iPhone" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6FF70848182A41F900A05F1E /* Debug */,
-				6FF70849182A41F900A05F1E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6FF7084A182A41F900A05F1E /* Build configuration list for PBXNativeTarget "ADMC_iPhone" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6FF7084B182A41F900A05F1E /* Debug */,
-				6FF7084C182A41F900A05F1E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6FF7084D182A41F900A05F1E /* Build configuration list for PBXNativeTarget "ADMC_iPhoneTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6FF7084E182A41F900A05F1E /* Debug */,
-				6FF7084F182A41F900A05F1E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 6FF7080D182A41F800A05F1E /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>1936E8B30D634B6CBC3741C0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-ADMC_iPhoneTests.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods-ADMC_iPhoneTests.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>68A2D0AA454D4BF9BD92CD5E</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-ADMC_iPhoneTests.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>6F0CEBF6183DF5D90099B38D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6F0CEBF7183DF6050099B38D</string>
+				<string>6F0CEBF8183DF6050099B38D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>SearchViewController</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6F0CEBF7183DF6050099B38D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SearchViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6F0CEBF8183DF6050099B38D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SearchViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6F0CEBF9183DF6050099B38D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6F0CEBF8183DF6050099B38D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6F0CEBFD183E16460099B38D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>NewsDetailsViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6F0CEBFE183E16460099B38D</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>NewsDetailsViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6F0CEBFF183E16460099B38D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6F0CEBFE183E16460099B38D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6F6DB8181844B84C00CC9DB7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6F6DB8191844BA6000CC9DB7</string>
+				<string>6F6DB81A1844BA6000CC9DB7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>ADMC_APIsWork</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6F6DB8191844BA6000CC9DB7</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ADMC_URLS.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6F6DB81A1844BA6000CC9DB7</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ADMC_URLS.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6F6DB81B1844BA6000CC9DB7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6F6DB81A1844BA6000CC9DB7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6F9823B1183CB3B400001231</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6F9823B2183CB3E200001231</string>
+				<string>6F9823B3183CB3E200001231</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>PageControllerViews</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6F9823B2183CB3E200001231</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>PageControlViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6F9823B3183CB3E200001231</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>PageControlViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6F9823B4183CB3E200001231</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6F9823B3183CB3E200001231</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6F9823B6183D01E500001231</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6F9823B7183D021000001231</string>
+				<string>6F9823B8183D021000001231</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>CustomCells</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6F9823B7183D021000001231</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>GeneralCell.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6F9823B8183D021000001231</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>GeneralCell.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6F9823B9183D021000001231</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6F9823B8183D021000001231</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FC2E3D7183B6253000E21DD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6F0CEBF6183DF5D90099B38D</string>
+				<string>6F9823B6183D01E500001231</string>
+				<string>6F9823B1183CB3B400001231</string>
+				<string>6FC2E3D8183B636E000E21DD</string>
+				<string>6FC2E3D9183B636E000E21DD</string>
+				<string>6F0CEBFD183E16460099B38D</string>
+				<string>6F0CEBFE183E16460099B38D</string>
+				<string>6FC2E3DA183B636E000E21DD</string>
+				<string>6FC2E3DB183B636E000E21DD</string>
+				<string>6FC2E3DC183B636E000E21DD</string>
+				<string>6FC2E3DD183B636E000E21DD</string>
+				<string>6FC2E3E9183B6D3E000E21DD</string>
+				<string>6FC2E3EA183B6D3E000E21DD</string>
+				<string>6FC2E3EC183B6D69000E21DD</string>
+				<string>6FC2E3ED183B6D69000E21DD</string>
+				<string>6FC2E3EF183B6D7E000E21DD</string>
+				<string>6FC2E3F0183B6D7E000E21DD</string>
+				<string>6FEC3127184214EB00BB74BA</string>
+				<string>6FEC3128184214EB00BB74BA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>UIViewsControllers</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FC2E3D8183B636E000E21DD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>NewsViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FC2E3D9183B636E000E21DD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>NewsViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FC2E3DA183B636E000E21DD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>MatchesViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FC2E3DB183B636E000E21DD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>MatchesViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FC2E3DC183B636E000E21DD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SplashViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FC2E3DD183B636E000E21DD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SplashViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FC2E3DE183B636E000E21DD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FC2E3D9183B636E000E21DD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FC2E3DF183B636E000E21DD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FC2E3DB183B636E000E21DD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FC2E3E0183B636E000E21DD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FC2E3DD183B636E000E21DD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FC2E3E1183B6387000E21DD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6FC2E3E2183B6387000E21DD</string>
+				<string>6FC2E3E3183B6387000E21DD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>AppDelegate</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FC2E3E2183B6387000E21DD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FC2E3E3183B6387000E21DD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FC2E3E4183B6387000E21DD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FC2E3E3183B6387000E21DD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FC2E3E5183B696F000E21DD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6FC2E3E6183B697B000E21DD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>images</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FC2E3E6183B697B000E21DD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.jpeg</string>
+			<key>path</key>
+			<string>splash.jpg</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FC2E3E7183B697B000E21DD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FC2E3E6183B697B000E21DD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FC2E3E9183B6D3E000E21DD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>MediaViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FC2E3EA183B6D3E000E21DD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>MediaViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FC2E3EB183B6D3E000E21DD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FC2E3EA183B6D3E000E21DD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FC2E3EC183B6D69000E21DD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FavouritesViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FC2E3ED183B6D69000E21DD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FavouritesViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FC2E3EE183B6D69000E21DD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FC2E3ED183B6D69000E21DD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FC2E3EF183B6D7E000E21DD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>MoreViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FC2E3F0183B6D7E000E21DD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>MoreViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FC2E3F1183B6D7E000E21DD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FC2E3F0183B6D7E000E21DD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FC2E3F2183B9EE0000E21DD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/ADMCStoryBoard.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FEC3127184214EB00BB74BA</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AddCommentViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FEC3128184214EB00BB74BA</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AddCommentViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FEC3129184214EB00BB74BA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FEC3128184214EB00BB74BA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FEC32071842350E00BB74BA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>MessageUI.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/MessageUI.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>6FEC32081842350E00BB74BA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FEC32071842350E00BB74BA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Weak</string>
+				</array>
+			</dict>
+		</dict>
+		<key>6FEC32091842352100BB74BA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Security.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Security.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>6FEC320A1842352100BB74BA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FEC32091842352100BB74BA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Weak</string>
+				</array>
+			</dict>
+		</dict>
+		<key>6FEC320B1842353400BB74BA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>SystemConfiguration.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/SystemConfiguration.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>6FEC320C1842353400BB74BA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FEC320B1842353400BB74BA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Weak</string>
+				</array>
+			</dict>
+		</dict>
+		<key>6FF7080C182A41F800A05F1E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6FF83A901843522000BF30C2</string>
+				<string>6FF7081E182A41F900A05F1E</string>
+				<string>6FF70840182A41F900A05F1E</string>
+				<string>6FF70817182A41F900A05F1E</string>
+				<string>6FF70816182A41F900A05F1E</string>
+				<string>1936E8B30D634B6CBC3741C0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF7080D182A41F800A05F1E</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0500</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Sarmady</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>6FF70838182A41F900A05F1E</key>
+					<dict>
+						<key>TestTargetID</key>
+						<string>6FF70814182A41F800A05F1E</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>6FF70810182A41F800A05F1E</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+				<string>de</string>
+				<string>es</string>
+				<string>fr</string>
+				<string>ru</string>
+				<string>sv</string>
+				<string>zh-Hans</string>
+				<string>it</string>
+				<string>uk</string>
+			</array>
+			<key>mainGroup</key>
+			<string>6FF7080C182A41F800A05F1E</string>
+			<key>productRefGroup</key>
+			<string>6FF70816182A41F900A05F1E</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>6FF70814182A41F800A05F1E</string>
+				<string>6FF70838182A41F900A05F1E</string>
+			</array>
+		</dict>
+		<key>6FF70810182A41F800A05F1E</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>6FF70848182A41F900A05F1E</string>
+				<string>6FF70849182A41F900A05F1E</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>6FF70811182A41F800A05F1E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>6FF83D0D184390D000BF30C2</string>
+				<string>6FF83D431843913C00BF30C2</string>
+				<string>6FEC3129184214EB00BB74BA</string>
+				<string>6FC2E3DE183B636E000E21DD</string>
+				<string>6FF83D06184390D000BF30C2</string>
+				<string>6F9823B4183CB3E200001231</string>
+				<string>6FF83D04184390D000BF30C2</string>
+				<string>6FF83D05184390D000BF30C2</string>
+				<string>6F9823B9183D021000001231</string>
+				<string>6FC2E3F1183B6D7E000E21DD</string>
+				<string>6FF83D5E1843913C00BF30C2</string>
+				<string>6FF83D11184390D000BF30C2</string>
+				<string>6FF83D0A184390D000BF30C2</string>
+				<string>6F0CEBFF183E16460099B38D</string>
+				<string>6FF83D14184390D000BF30C2</string>
+				<string>6FC2E3EB183B6D3E000E21DD</string>
+				<string>6FF83D441843913C00BF30C2</string>
+				<string>6FF83D421843913C00BF30C2</string>
+				<string>6FF83D08184390D000BF30C2</string>
+				<string>6F6DB81B1844BA6000CC9DB7</string>
+				<string>6FF83D5F1843913C00BF30C2</string>
+				<string>6FC2E3E0183B636E000E21DD</string>
+				<string>6FF83D411843913C00BF30C2</string>
+				<string>6FC2E3DF183B636E000E21DD</string>
+				<string>6FF83D13184390D000BF30C2</string>
+				<string>6FF83D0C184390D000BF30C2</string>
+				<string>6FF70825182A41F900A05F1E</string>
+				<string>6FF83D0E184390D000BF30C2</string>
+				<string>6FF83D09184390D000BF30C2</string>
+				<string>6FF83D0B184390D000BF30C2</string>
+				<string>6F0CEBF9183DF6050099B38D</string>
+				<string>6FC2E3EE183B6D69000E21DD</string>
+				<string>6FF83D12184390D000BF30C2</string>
+				<string>6FF83D451843913C00BF30C2</string>
+				<string>6FC2E3E4183B6387000E21DD</string>
+				<string>6FF83D0F184390D000BF30C2</string>
+				<string>6FF83D10184390D000BF30C2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>6FF70812182A41F800A05F1E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>6FF83D6718439BB900BF30C2</string>
+				<string>6FF83C0A18437F8800BF30C2</string>
+				<string>6FF83ADF18435B0E00BF30C2</string>
+				<string>6FF83ADB18435A8A00BF30C2</string>
+				<string>6FEC320C1842353400BB74BA</string>
+				<string>6FEC320A1842352100BB74BA</string>
+				<string>6FEC32081842350E00BB74BA</string>
+				<string>6FF83D611843934D00BF30C2</string>
+				<string>6FF83D6918439EB400BF30C2</string>
+				<string>6FF7081B182A41F900A05F1E</string>
+				<string>6FF7081D182A41F900A05F1E</string>
+				<string>6FF83D601843934A00BF30C2</string>
+				<string>6FF70819182A41F900A05F1E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>6FF70813182A41F800A05F1E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>6FF83D03184390D000BF30C2</string>
+				<string>6FF83D541843913C00BF30C2</string>
+				<string>6FF83D4C1843913C00BF30C2</string>
+				<string>6FF83D4F1843913C00BF30C2</string>
+				<string>6FC2E3E7183B697B000E21DD</string>
+				<string>6FF83D4E1843913C00BF30C2</string>
+				<string>6FF70834182A41F900A05F1E</string>
+				<string>6FF83D401843913C00BF30C2</string>
+				<string>6FF83D07184390D000BF30C2</string>
+				<string>6FF83D5A1843913C00BF30C2</string>
+				<string>6FF83D461843913C00BF30C2</string>
+				<string>6FF83D02184390D000BF30C2</string>
+				<string>6FF83D581843913C00BF30C2</string>
+				<string>6FF83D511843913C00BF30C2</string>
+				<string>6FF83D5B1843913C00BF30C2</string>
+				<string>6FF83D521843913C00BF30C2</string>
+				<string>6FF70823182A41F900A05F1E</string>
+				<string>6FF83D491843913C00BF30C2</string>
+				<string>6FF83D5C1843913C00BF30C2</string>
+				<string>6FF83D4A1843913C00BF30C2</string>
+				<string>6FF83D501843913C00BF30C2</string>
+				<string>6FF83D571843913C00BF30C2</string>
+				<string>6FF83D481843913C00BF30C2</string>
+				<string>6FF83D531843913C00BF30C2</string>
+				<string>6FF83D591843913C00BF30C2</string>
+				<string>6FF83D5D1843913C00BF30C2</string>
+				<string>6FF83D551843913C00BF30C2</string>
+				<string>6FF83D561843913C00BF30C2</string>
+				<string>6FF83D471843913C00BF30C2</string>
+				<string>6FF83D4D1843913C00BF30C2</string>
+				<string>6FF83D4B1843913C00BF30C2</string>
+				<string>6FF7082C182A41F900A05F1E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>6FF70814182A41F800A05F1E</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>6FF7084A182A41F900A05F1E</string>
+			<key>buildPhases</key>
+			<array>
+				<string>6FF70811182A41F800A05F1E</string>
+				<string>6FF70812182A41F800A05F1E</string>
+				<string>6FF70813182A41F800A05F1E</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>ADMC_iPhone</string>
+			<key>productName</key>
+			<string>ADMC_iPhone</string>
+			<key>productReference</key>
+			<string>6FF70815182A41F900A05F1E</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>6FF70815182A41F900A05F1E</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>ADMC_iPhone.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>6FF70816182A41F900A05F1E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6FF70815182A41F900A05F1E</string>
+				<string>6FF70839182A41F900A05F1E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF70817182A41F900A05F1E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6FF83D6818439EB400BF30C2</string>
+				<string>6FF83D6618439BB900BF30C2</string>
+				<string>6FF83C0918437F8800BF30C2</string>
+				<string>6FF83ADE18435B0E00BF30C2</string>
+				<string>6FF83ADA18435A8A00BF30C2</string>
+				<string>6FEC320B1842353400BB74BA</string>
+				<string>6FEC32091842352100BB74BA</string>
+				<string>6FEC32071842350E00BB74BA</string>
+				<string>6FF70818182A41F900A05F1E</string>
+				<string>6FF7081A182A41F900A05F1E</string>
+				<string>6FF7081C182A41F900A05F1E</string>
+				<string>6FF7083A182A41F900A05F1E</string>
+				<string>68A2D0AA454D4BF9BD92CD5E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF70818182A41F900A05F1E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>6FF70819182A41F900A05F1E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF70818182A41F900A05F1E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Weak</string>
+				</array>
+			</dict>
+		</dict>
+		<key>6FF7081A182A41F900A05F1E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>6FF7081B182A41F900A05F1E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF7081A182A41F900A05F1E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Weak</string>
+				</array>
+			</dict>
+		</dict>
+		<key>6FF7081C182A41F900A05F1E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>6FF7081D182A41F900A05F1E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF7081C182A41F900A05F1E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Weak</string>
+				</array>
+			</dict>
+		</dict>
+		<key>6FF7081E182A41F900A05F1E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6F6DB8181844B84C00CC9DB7</string>
+				<string>6FC2E3E5183B696F000E21DD</string>
+				<string>6FC2E3E1183B6387000E21DD</string>
+				<string>6FC2E3D7183B6253000E21DD</string>
+				<string>6FF7082A182A41F900A05F1E</string>
+				<string>6FF70833182A41F900A05F1E</string>
+				<string>6FF7081F182A41F900A05F1E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>ADMC_iPhone</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF7081F182A41F900A05F1E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6FF70820182A41F900A05F1E</string>
+				<string>6FF70821182A41F900A05F1E</string>
+				<string>6FF70824182A41F900A05F1E</string>
+				<string>6FF70826182A41F900A05F1E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF70820182A41F900A05F1E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>ADMC_iPhone-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF70821182A41F900A05F1E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6FF70822182A41F900A05F1E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF70822182A41F900A05F1E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF70823182A41F900A05F1E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF70821182A41F900A05F1E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF70824182A41F900A05F1E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF70825182A41F900A05F1E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF70824182A41F900A05F1E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF70826182A41F900A05F1E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ADMC_iPhone-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF7082A182A41F900A05F1E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6FC2E3F2183B9EE0000E21DD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>ADMCStoryBoard.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF7082C182A41F900A05F1E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF7082A182A41F900A05F1E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF70833182A41F900A05F1E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF70834182A41F900A05F1E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF70833182A41F900A05F1E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF70835182A41F900A05F1E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>6FF70847182A41F900A05F1E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>6FF70836182A41F900A05F1E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>6FF7083B182A41F900A05F1E</string>
+				<string>6FF7083D182A41F900A05F1E</string>
+				<string>6FF7083C182A41F900A05F1E</string>
+				<string>DC337B6F8E4D4D6A834EFC8A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>6FF70837182A41F900A05F1E</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>6FF70845182A41F900A05F1E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>6FF70838182A41F900A05F1E</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>6FF7084D182A41F900A05F1E</string>
+			<key>buildPhases</key>
+			<array>
+				<string>868BAB605B4147B2854AFD1A</string>
+				<string>6FF70835182A41F900A05F1E</string>
+				<string>6FF70836182A41F900A05F1E</string>
+				<string>6FF70837182A41F900A05F1E</string>
+				<string>9EDA9D4E327E42368F8E7960</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>6FF7083F182A41F900A05F1E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>ADMC_iPhoneTests</string>
+			<key>productName</key>
+			<string>ADMC_iPhoneTests</string>
+			<key>productReference</key>
+			<string>6FF70839182A41F900A05F1E</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>6FF70839182A41F900A05F1E</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>ADMC_iPhoneTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>6FF7083A182A41F900A05F1E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>XCTest.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/XCTest.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>6FF7083B182A41F900A05F1E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF7083A182A41F900A05F1E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF7083C182A41F900A05F1E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF70818182A41F900A05F1E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF7083D182A41F900A05F1E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF7081C182A41F900A05F1E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF7083E182A41F900A05F1E</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>6FF7080D182A41F800A05F1E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>6FF70814182A41F800A05F1E</string>
+			<key>remoteInfo</key>
+			<string>ADMC_iPhone</string>
+		</dict>
+		<key>6FF7083F182A41F900A05F1E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>6FF70814182A41F800A05F1E</string>
+			<key>targetProxy</key>
+			<string>6FF7083E182A41F900A05F1E</string>
+		</dict>
+		<key>6FF70840182A41F900A05F1E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6FF70846182A41F900A05F1E</string>
+				<string>6FF70841182A41F900A05F1E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>ADMC_iPhoneTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF70841182A41F900A05F1E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6FF70842182A41F900A05F1E</string>
+				<string>6FF70843182A41F900A05F1E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF70842182A41F900A05F1E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>ADMC_iPhoneTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF70843182A41F900A05F1E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6FF70844182A41F900A05F1E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF70844182A41F900A05F1E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF70845182A41F900A05F1E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF70843182A41F900A05F1E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF70846182A41F900A05F1E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ADMC_iPhoneTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF70847182A41F900A05F1E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF70846182A41F900A05F1E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF70848182A41F900A05F1E</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>6FF70849182A41F900A05F1E</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>6FF7084A182A41F900A05F1E</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>6FF7084B182A41F900A05F1E</string>
+				<string>6FF7084C182A41F900A05F1E</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>6FF7084B182A41F900A05F1E</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD)</string>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>iPhone Developer</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>/Users/yomna/Desktop/super.ae_iPhone</string>
+					<string>/Users/yomna/Documents/FacebookSDK</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>ADMC_iPhone/ADMC_iPhone-Prefix.pch</string>
+				<key>GCC_VERSION</key>
+				<string></string>
+				<key>INFOPLIST_FILE</key>
+				<string>ADMC_iPhone/ADMC_iPhone-Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>5.0</string>
+				<key>LIBRARY_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>/Users/yomna/Desktop/super.ae_iPhone/OWActivityViewController/WeChatSDK</string>
+				</array>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1</string>
+				<key>VALID_ARCHS</key>
+				<string>armv7 armv7s arm64</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>6FF7084C182A41F900A05F1E</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD)</string>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>iPhone Developer</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>/Users/yomna/Desktop/super.ae_iPhone</string>
+					<string>/Users/yomna/Documents/FacebookSDK</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>ADMC_iPhone/ADMC_iPhone-Prefix.pch</string>
+				<key>GCC_VERSION</key>
+				<string></string>
+				<key>INFOPLIST_FILE</key>
+				<string>ADMC_iPhone/ADMC_iPhone-Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>5.0</string>
+				<key>LIBRARY_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>/Users/yomna/Desktop/super.ae_iPhone/OWActivityViewController/WeChatSDK</string>
+				</array>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1</string>
+				<key>VALID_ARCHS</key>
+				<string>armv7 armv7s arm64</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>6FF7084D182A41F900A05F1E</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>6FF7084E182A41F900A05F1E</string>
+				<string>6FF7084F182A41F900A05F1E</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>6FF7084E182A41F900A05F1E</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>1936E8B30D634B6CBC3741C0</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/ADMC_iPhone.app/ADMC_iPhone</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>ADMC_iPhone/ADMC_iPhone-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>ADMC_iPhoneTests/ADMC_iPhoneTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>6FF7084F182A41F900A05F1E</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>1936E8B30D634B6CBC3741C0</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/ADMC_iPhone.app/ADMC_iPhone</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>ADMC_iPhone/ADMC_iPhone-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>ADMC_iPhoneTests/ADMC_iPhoneTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>6FF83A901843522000BF30C2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6FF83D171843913C00BF30C2</string>
+				<string>6FF83CCE184390CF00BF30C2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>ThirdPartyLibraries</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83ADA18435A8A00BF30C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Twitter.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Twitter.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>6FF83ADB18435A8A00BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83ADA18435A8A00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Weak</string>
+				</array>
+			</dict>
+		</dict>
+		<key>6FF83ADE18435B0E00BF30C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>AssetsLibrary.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/AssetsLibrary.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>6FF83ADF18435B0E00BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83ADE18435B0E00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83C0918437F8800BF30C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Social.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Social.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>6FF83C0A18437F8800BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83C0918437F8800BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83CCE184390CF00BF30C2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6FF83CCF184390CF00BF30C2</string>
+				<string>6FF83CD1184390CF00BF30C2</string>
+				<string>6FF83CDA184390CF00BF30C2</string>
+				<string>6FF83CDB184390CF00BF30C2</string>
+				<string>6FF83CDC184390CF00BF30C2</string>
+				<string>6FF83CDD184390CF00BF30C2</string>
+				<string>6FF83CDE184390CF00BF30C2</string>
+				<string>6FF83CDF184390CF00BF30C2</string>
+				<string>6FF83CE0184390CF00BF30C2</string>
+				<string>6FF83CE1184390CF00BF30C2</string>
+				<string>6FF83CE2184390CF00BF30C2</string>
+				<string>6FF83CE3184390CF00BF30C2</string>
+				<string>6FF83CE4184390CF00BF30C2</string>
+				<string>6FF83CE5184390CF00BF30C2</string>
+				<string>6FF83CE6184390CF00BF30C2</string>
+				<string>6FF83CE7184390CF00BF30C2</string>
+				<string>6FF83CE8184390CF00BF30C2</string>
+				<string>6FF83CE9184390CF00BF30C2</string>
+				<string>6FF83CEA184390CF00BF30C2</string>
+				<string>6FF83CEB184390CF00BF30C2</string>
+				<string>6FF83CEC184390CF00BF30C2</string>
+				<string>6FF83CED184390D000BF30C2</string>
+				<string>6FF83CEE184390D000BF30C2</string>
+				<string>6FF83CEF184390D000BF30C2</string>
+				<string>6FF83CF0184390D000BF30C2</string>
+				<string>6FF83CF1184390D000BF30C2</string>
+				<string>6FF83CF2184390D000BF30C2</string>
+				<string>6FF83CF3184390D000BF30C2</string>
+				<string>6FF83CF4184390D000BF30C2</string>
+				<string>6FF83CF5184390D000BF30C2</string>
+				<string>6FF83CF6184390D000BF30C2</string>
+				<string>6FF83CF7184390D000BF30C2</string>
+				<string>6FF83CF8184390D000BF30C2</string>
+				<string>6FF83CF9184390D000BF30C2</string>
+				<string>6FF83CFA184390D000BF30C2</string>
+				<string>6FF83CFB184390D000BF30C2</string>
+				<string>6FF83CFC184390D000BF30C2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>OWActivityViewController</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CCF184390CF00BF30C2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6FF83CD0184390CF00BF30C2</string>
+				<string>6FF83D01184390D000BF30C2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>OWActivityViewController.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CD0184390CF00BF30C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/OWActivityViewController.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CD1184390CF00BF30C2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6FF83CD2184390CF00BF30C2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Localizations</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CD2184390CF00BF30C2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6FF83CD3184390CF00BF30C2</string>
+				<string>6FF83CD4184390CF00BF30C2</string>
+				<string>6FF83CD5184390CF00BF30C2</string>
+				<string>6FF83CD6184390CF00BF30C2</string>
+				<string>6FF83CD7184390CF00BF30C2</string>
+				<string>6FF83CD8184390CF00BF30C2</string>
+				<string>6FF83CD9184390CF00BF30C2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>OWActivityViewController.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CD3184390CF00BF30C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>de</string>
+			<key>path</key>
+			<string>de.lproj/OWActivityViewController.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CD4184390CF00BF30C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/OWActivityViewController.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CD5184390CF00BF30C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>es</string>
+			<key>path</key>
+			<string>es.lproj/OWActivityViewController.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CD6184390CF00BF30C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>fr</string>
+			<key>path</key>
+			<string>fr.lproj/OWActivityViewController.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CD7184390CF00BF30C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>ru</string>
+			<key>path</key>
+			<string>ru.lproj/OWActivityViewController.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CD8184390CF00BF30C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>sv</string>
+			<key>path</key>
+			<string>sv.lproj/OWActivityViewController.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CD9184390CF00BF30C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>zh-Hans</string>
+			<key>path</key>
+			<string>zh-Hans.lproj/OWActivityViewController.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CDA184390CF00BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>OWActivities.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CDB184390CF00BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>OWActivity.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CDC184390CF00BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>OWActivity.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CDD184390CF00BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>OWActivityDelegateObject.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CDE184390CF00BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>OWActivityDelegateObject.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CDF184390CF00BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>OWActivityView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CE0184390CF00BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>OWActivityView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CE1184390CF00BF30C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.plug-in</string>
+			<key>path</key>
+			<string>OWActivityViewController.bundle</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CE2184390CF00BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>OWActivityViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CE3184390CF00BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>OWActivityViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CE4184390CF00BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>OWCopyActivity.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CE5184390CF00BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>OWCopyActivity.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CE6184390CF00BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>OWFacebookActivity.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CE7184390CF00BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>OWFacebookActivity.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CE8184390CF00BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>OWMailActivity.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CE9184390CF00BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>OWMailActivity.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CEA184390CF00BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>OWMapsActivity.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CEB184390CF00BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>OWMapsActivity.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CEC184390CF00BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>OWMessageActivity.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CED184390D000BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>OWMessageActivity.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CEE184390D000BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>OWPrintActivity.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CEF184390D000BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>OWPrintActivity.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CF0184390D000BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>OWSafariActivity.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CF1184390D000BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>OWSafariActivity.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CF2184390D000BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>OWSaveToCameraRollActivity.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CF3184390D000BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>OWSaveToCameraRollActivity.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CF4184390D000BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>OWSinaWeiboActivity.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CF5184390D000BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>OWSinaWeiboActivity.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CF6184390D000BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>OWTwitterActivity.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CF7184390D000BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>OWTwitterActivity.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CF8184390D000BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>OWWeChatActivity.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CF9184390D000BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>OWWeChatActivity.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CFA184390D000BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>UIImage+Resize.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CFB184390D000BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>UIImage+Resize.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CFC184390D000BF30C2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6FF83CFD184390D000BF30C2</string>
+				<string>6FF83CFE184390D000BF30C2</string>
+				<string>6FF83CFF184390D000BF30C2</string>
+				<string>6FF83D00184390D000BF30C2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>WeChatSDK</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CFD184390D000BF30C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>archive.ar</string>
+			<key>path</key>
+			<string>libWeChatSDK.a</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CFE184390D000BF30C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>archive.ar</string>
+			<key>path</key>
+			<string>libWeChatSDK_armv7_armv7s.a</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83CFF184390D000BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>WXApi.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D00184390D000BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>WXApiObject.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D01184390D000BF30C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>zh-Hans</string>
+			<key>path</key>
+			<string>zh-Hans.lproj/OWActivityViewController.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D02184390D000BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83CCF184390CF00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D03184390D000BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83CD2184390CF00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D04184390D000BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83CDC184390CF00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D05184390D000BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83CDE184390CF00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D06184390D000BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83CE0184390CF00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D07184390D000BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83CE1184390CF00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D08184390D000BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83CE3184390CF00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D09184390D000BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83CE5184390CF00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D0A184390D000BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83CE7184390CF00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D0B184390D000BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83CE9184390CF00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D0C184390D000BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83CEB184390CF00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D0D184390D000BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83CED184390D000BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D0E184390D000BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83CEF184390D000BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D0F184390D000BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83CF1184390D000BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D10184390D000BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83CF3184390D000BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D11184390D000BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83CF5184390D000BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D12184390D000BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83CF7184390D000BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D13184390D000BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83CF9184390D000BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D14184390D000BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83CFB184390D000BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D171843913C00BF30C2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6FF83D181843913C00BF30C2</string>
+				<string>6FF83D191843913C00BF30C2</string>
+				<string>6FF83D1A1843913C00BF30C2</string>
+				<string>6FF83D1B1843913C00BF30C2</string>
+				<string>6FF83D1C1843913C00BF30C2</string>
+				<string>6FF83D1D1843913C00BF30C2</string>
+				<string>6FF83D1E1843913C00BF30C2</string>
+				<string>6FF83D1F1843913C00BF30C2</string>
+				<string>6FF83D201843913C00BF30C2</string>
+				<string>6FF83D211843913C00BF30C2</string>
+				<string>6FF83D221843913C00BF30C2</string>
+				<string>6FF83D231843913C00BF30C2</string>
+				<string>6FF83D3C1843913C00BF30C2</string>
+				<string>6FF83D3D1843913C00BF30C2</string>
+				<string>6FF83D3E1843913C00BF30C2</string>
+				<string>6FF83D3F1843913C00BF30C2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>FacebookComposeViewController</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D181843913C00BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>DEFacebookComposeView.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D191843913C00BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>DEFacebookComposeViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D1A1843913C00BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>DEFacebookComposeViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D1B1843913C00BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>DEFacebookGradientView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D1C1843913C00BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>DEFacebookGradientView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D1D1843913C00BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>DEFacebookSheetCardView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D1E1843913C00BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>DEFacebookSheetCardView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D1F1843913C00BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>DEFacebookTextView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D201843913C00BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>DEFacebookTextView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D211843913C00BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>DERuledView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D221843913C00BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>DERuledView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D231843913C00BF30C2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6FF83D241843913C00BF30C2</string>
+				<string>6FF83D251843913C00BF30C2</string>
+				<string>6FF83D261843913C00BF30C2</string>
+				<string>6FF83D271843913C00BF30C2</string>
+				<string>6FF83D281843913C00BF30C2</string>
+				<string>6FF83D291843913C00BF30C2</string>
+				<string>6FF83D2A1843913C00BF30C2</string>
+				<string>6FF83D2B1843913C00BF30C2</string>
+				<string>6FF83D2C1843913C00BF30C2</string>
+				<string>6FF83D2D1843913C00BF30C2</string>
+				<string>6FF83D2E1843913C00BF30C2</string>
+				<string>6FF83D2F1843913C00BF30C2</string>
+				<string>6FF83D301843913C00BF30C2</string>
+				<string>6FF83D311843913C00BF30C2</string>
+				<string>6FF83D321843913C00BF30C2</string>
+				<string>6FF83D331843913C00BF30C2</string>
+				<string>6FF83D341843913C00BF30C2</string>
+				<string>6FF83D351843913C00BF30C2</string>
+				<string>6FF83D361843913C00BF30C2</string>
+				<string>6FF83D371843913C00BF30C2</string>
+				<string>6FF83D381843913C00BF30C2</string>
+				<string>6FF83D391843913C00BF30C2</string>
+				<string>6FF83D3A1843913C00BF30C2</string>
+				<string>6FF83D3B1843913C00BF30C2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Resources</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D241843913C00BF30C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>DEFacebookAttachmentFrame.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D251843913C00BF30C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>DEFacebookAttachmentFrame@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D261843913C00BF30C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>DEFacebookCancelButtonLandscape.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D271843913C00BF30C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>DEFacebookCancelButtonLandscape@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D281843913C00BF30C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>DEFacebookCancelButtonPortrait.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D291843913C00BF30C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>DEFacebookCancelButtonPortrait@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D2A1843913C00BF30C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>DEFacebookCardAccountLine.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D2B1843913C00BF30C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>DEFacebookCardAccountLine@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D2C1843913C00BF30C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>DEFacebookCardBackground.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D2D1843913C00BF30C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>DEFacebookCardBackground@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D2E1843913C00BF30C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>DEFacebookCardHeaderLine.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D2F1843913C00BF30C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>DEFacebookCardHeaderLine@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D301843913C00BF30C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>DEFacebookPaperClip.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D311843913C00BF30C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>DEFacebookPaperClip@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D321843913C00BF30C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>DEFacebookSendButtonLandscape.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D331843913C00BF30C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>DEFacebookSendButtonLandscape@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D341843913C00BF30C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>DEFacebookSendButtonPortrait.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D351843913C00BF30C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>DEFacebookSendButtonPortrait@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D361843913C00BF30C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>DEFacebookURLAttachment.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D371843913C00BF30C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>DEFacebookURLAttachment@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D381843913C00BF30C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>NavBarLandscape.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D391843913C00BF30C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>NavBarLandscape1.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D3A1843913C00BF30C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>NavBarLandscape@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D3B1843913C00BF30C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>NavBarLandscape@2x1.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D3C1843913C00BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>UIApplication+DEFacebookComposeViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D3D1843913C00BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>UIApplication+DEFacebookComposeViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D3E1843913C00BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>UIDevice+DEFacebookComposeViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D3F1843913C00BF30C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>UIDevice+DEFacebookComposeViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D401843913C00BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83D181843913C00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D411843913C00BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83D1A1843913C00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fno-objc-arc</string>
+			</dict>
+		</dict>
+		<key>6FF83D421843913C00BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83D1C1843913C00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fno-objc-arc</string>
+			</dict>
+		</dict>
+		<key>6FF83D431843913C00BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83D1E1843913C00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fno-objc-arc</string>
+			</dict>
+		</dict>
+		<key>6FF83D441843913C00BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83D201843913C00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fno-objc-arc</string>
+			</dict>
+		</dict>
+		<key>6FF83D451843913C00BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83D221843913C00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-fno-objc-arc</string>
+			</dict>
+		</dict>
+		<key>6FF83D461843913C00BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83D241843913C00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D471843913C00BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83D251843913C00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D481843913C00BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83D261843913C00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D491843913C00BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83D271843913C00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D4A1843913C00BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83D281843913C00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D4B1843913C00BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83D291843913C00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D4C1843913C00BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83D2A1843913C00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D4D1843913C00BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83D2B1843913C00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D4E1843913C00BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83D2C1843913C00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D4F1843913C00BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83D2D1843913C00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D501843913C00BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83D2E1843913C00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D511843913C00BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83D2F1843913C00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D521843913C00BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83D301843913C00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D531843913C00BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83D311843913C00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D541843913C00BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83D321843913C00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D551843913C00BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83D331843913C00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D561843913C00BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83D341843913C00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D571843913C00BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83D351843913C00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D581843913C00BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83D361843913C00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D591843913C00BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83D371843913C00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D5A1843913C00BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83D381843913C00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D5B1843913C00BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83D391843913C00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D5C1843913C00BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83D3A1843913C00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D5D1843913C00BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83D3B1843913C00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D5E1843913C00BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83D3D1843913C00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D5F1843913C00BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83D3F1843913C00BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D601843934A00BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83CFD184390D000BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D611843934D00BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83CFE184390D000BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D6618439BB900BF30C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>QuartzCore.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/QuartzCore.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>6FF83D6718439BB900BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83D6618439BB900BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FF83D6818439EB400BF30C2</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>path</key>
+			<string>FacebookSDK.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF83D6918439EB400BF30C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FF83D6818439EB400BF30C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Weak</string>
+				</array>
+			</dict>
+		</dict>
+		<key>868BAB605B4147B2854AFD1A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>9EDA9D4E327E42368F8E7960</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-ADMC_iPhoneTests-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>DC337B6F8E4D4D6A834EFC8A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>68A2D0AA454D4BF9BD92CD5E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>6FF7080D182A41F800A05F1E</string>
+</dict>
+</plist>

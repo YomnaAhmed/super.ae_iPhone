@@ -1,0 +1,1 @@
+PODS_ADMC_IPHONETESTS_AFNETWORKING_OTHER_LDFLAGS = -framework MobileCoreServices -framework SystemConfiguration
